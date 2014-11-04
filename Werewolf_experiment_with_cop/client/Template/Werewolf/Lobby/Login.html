@@ -1,0 +1,81 @@
+<template name="Login">
+	{{#each getLoginVillage}}
+		<div id="loginVillage">{{> VillageListItem}}</div>
+	{{/each}}
+	<form name="LoginForm">
+		<div class="loginFormContents">
+			<div class="loginFormContentsName">CN</div>
+			<input type="text" class="loginFormTextarea" name="characterName"/>
+			<div class="loginFormContentsBaloon">
+				キャラクターネーム:<br>ゲーム中、常に表示される仮の名前です。<br>
+				(最大8文字まで入力できます)
+			</div>
+		</div>
+		
+	    <div class="loginFormContents">
+			<div class="loginFormContentsName">HN</div>
+			<input type="text" class="loginFormTextarea" name="handleName"/>
+			<div class="loginFormContentsBaloon">
+				ハンドルネーム:<br>ゲーム終了後に公開される、プレイヤー自身を表す名前です。<br>
+				ハンドルネームの後に続けて、半角の # と任意の文字列でトリップキーを指定できます(なりすまし防止)。<br>
+				(HN8文字, #を除いてトリップキー10文字まで入力できます)
+			</div>
+		</div>
+		
+		<div class="loginFormContents">
+			<div class="loginFormContentsName">PASS</div>
+			<input type="password" class="loginFormTextarea" name="password"/>
+			<div class="loginFormContentsBaloon">
+				パスワード:<br>再入村する際に必要となります。<br>
+				(最大10文字まで入力できます)
+			</div>
+		</div>
+		
+		<div class="loginFormContents">
+			<div class="loginFormContentsName">カラー</div>
+			<select name="loginColorForm" id="loginColorForm">
+				<option value="random" selected>ランダム</option>
+				<option value="red">赤</option>
+				<option value="green">緑</option>
+				<option value="blue">青</option>
+				<option value="pink">桃</option>
+				<option value="yellow">黄</option>
+				<option value="navy">紺</option>
+				<option value="orange">橙</option>
+				<option value="crimson">紅</option>
+				<option value="brown">茶</option>
+				<option value="purple">紫</option>
+				<option value="silver">銀</option>
+				<option value="black">黒</option>
+				<option value="greenyellow">黄緑</option>
+				<option value="aqua">水色</option>
+				<option value="darkgreen">抹茶</option>
+				<option value="royalblue">薄青</option>
+				<option value="bluegreen">青緑</option>
+				<option value="indigo">茄子</option>
+				<option value="blueviolet">青紫</option>
+				<option value="darkred">暗赤</option>
+				<option value="coral">珊瑚</option>
+				<option value="lightpink">薄桃</option>
+			</select>
+			<div class="colorSample noneIcon">　　</div>
+		</div>
+		
+		<div class="loginFormIcon">
+			<div class="loginFormContentsName">アイコン</div>
+			<div class="loginFormIconButtons">
+				<input type="button" name="openIconList" class="loginFormIconButton" value="変更"/>
+				<input type="button" name="randomIcon" class="loginFormIconButton" value="ランダム"/>
+			</div>
+			<div class="selectedIcon"><img id="0" src="./icon/0.png"/></div>
+		</div>
+		
+		<div class="loginFormButtons">
+			<div class="loginFormPadding"></div>
+			<input type="button" id="loginFormBackButton" name="backToLobby" value="戻る" />
+			<input type="button" class="loginFormButton" name="enterAsAudience" value="観戦">
+			<input type="button" class="loginFormButton" name="enter" value="入村"/>
+			<div class="loginFormPadding"></div>
+		</div>
+	</form>
+</template>

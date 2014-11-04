@@ -1,0 +1,70 @@
+.iconListMenu{
+	width: 650px;
+	height: 30px;
+	
+	float: left;
+	-webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    
+    margin-bottom: 1px;
+    margin-left: 5px;
+    background-image: url("/images/head004_06.gif");
+    border: solid 1px #000;    
+}
+
+#iconListMenuTop{
+	margin-top: 20px;
+}
+
+.iconListMenuPadding{
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+
+.iconListMenuItem{
+	width: 80px;
+	height: 30px;
+	
+	text-align: center;
+	color: #FFF;
+	float:left;
+	cursor: pointer;
+}
+
+.iconListItemSmallFont{
+	font-size: 12px;
+}
+
+.iconListMenuItemMouseovered{
+	background-image: url("/images/head004_02.gif");
+}
+
+.iconListMenuItemClicked{
+	background-image: url("/images/head004_03.gif");
+}
+
+.iconListBody{
+	width: 660px;
+	margin-top: 20px;
+	margin-left: 5px;
+	float: left;
+}
+
+.iconListItem{
+	width: 33px;
+	height: 50px;
+	
+	border: solid 2px #000;
+	float: left;
+	cursor: pointer;
+}
+
+.iconListItemMouseovered{
+	border: solid 2px #00F;
+}
+
+.iconListItemClicked{
+	border: solid 2px #F00;
+}

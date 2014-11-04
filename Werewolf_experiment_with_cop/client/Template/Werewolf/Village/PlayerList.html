@@ -1,0 +1,32 @@
+<template name="PlayerList">
+	{{#if isGM}}
+		{{#each getGM}}
+			<div id={{_id}} class={{getGMPlayerListItemClassName _id}}>{{> GMPlayerListItem}}</div>
+		{{/each}}
+	{{/if}}
+	<div class="playerListSummaryLabel" id="isLiving">生存者</div>
+	<div class="livingPlayerList">
+		{{#each getPlayers}}
+			<div id={{_id}} class={{getPlayerListItemClassName _id state isReady}}>{{> PlayerListItem}}</div>
+		{{/each}}
+	</div>
+	{{#each getSummaries}}
+		<div class={{getSummaryItemClassName playerIDs}}>
+			{{{getSummaryItemLabel day type playerIDs}}}
+			{{#if isNoPlayer playerIDs}}
+				<div class="noPlayersLabel">該当者なし</div>
+			{{/if}}
+			{{#each getSummaryPlayers playerIDs}}
+				<div id={{_id}} class={{getPlayerListItemClassName _id state isReady}}>{{> PlayerListItem}}</div>
+			{{/each}}
+		</div>
+	{{/each}}
+	
+	<div id="playerLogWindow">
+		<div id="playerLogWindowHeader"></div>
+		<div id="playerLogWindowCloseButton">×</div>
+		<div id="playerLogWindowSelector"></div>
+		<div id="playerLogWindowBody"></div>
+	</div>
+</template>
+

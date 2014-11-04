@@ -1,0 +1,33 @@
+<template name="LogVillageList">
+	<div class="logVillageListSearch">
+		<div class="logVillageListSearchLabel">番地検索:</div>
+		<input type="text" class="logVillageListSearchForm" name="logVillageNumber"/>
+		<div class="logVillageListSearchLabel">から50件</div>
+		<input type="button" class="logVillageListSearchButton" name="executeNumberSearch" value="番地検索"/>
+	</div>
+	<div class="logVillageListSearch">
+		<div class="logVillageListSearchLabel">トリップ検索: ♦︎</div>
+		<input type="text" class="logVillageListSearchForm" name="logVillageTrip"/>
+		<input type="button" class="logVillageListSearchButton" name="executeTripSearch" value="トリップ検索"/>
+	</div>
+	<div id="tripSearchResult"></div>
+	<div id="logVillageListLoading">
+		読み込み中...
+		<img src="/images/loading.gif">
+  	</div>
+  	<div class="logVillageListTable">
+		<table id="logVillageListTable">
+			<tr id="logVillageListHead">
+				<th class="logVillageListHead logVillageNumber">番地</th>
+				<th class="logVillageListHead logVillageName">村名</th>
+				<th class="logVillageListHead logVillageQuota">人数</th>
+				<th class="logVillageListHead logVillageRoleSet">配役</th>
+			</tr>
+		</table>
+	</div>
+	<div id="logVillageListControl">
+		<div class="logVillageListControlItem logVillageListForward">次の50件</div>
+		<div class="logVillageListControlItem logVillageListBack">戻る</div>
+		<div class="logVillageListControlItem logVillageListBackward">前の50件</div>
+	</div>
+</template>

@@ -1,0 +1,22 @@
+div.logSelectorItem{
+	min-width: 50px;
+	height: 23px;
+	margin-left: 1px;
+	text-align: center;
+	font-size: 15px;
+	cursor: pointer;
+	float: left;
+	
+	border: solid 1px gray;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.logSelectorItemMouseovered{
+	background-color: #FFAA33;
+}
+
+.logSelectorItemClicked{
+	background-color: #FF5500;
+}

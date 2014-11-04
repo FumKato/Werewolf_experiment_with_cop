@@ -1,0 +1,224 @@
+<template name="VillageCreateMenu">
+<form name="villageCreate">
+		<div class="villageCreateContents">
+			<div class="villageCreateContentsName">村の名前</div>
+			<input type="text" class="villageCreateTextarea" name="villageName" id="villageName"/>村
+			<div class="villageCreateContentsBaloon">
+				最大15文字まで入力できます
+			</div>
+		</div>
+		
+		<div class="villageCreateContents">
+			<div class="villageCreateContentsName">参加人数</div>
+    		<select name="quotaForm" id="quotaForm">
+      			<option value=4>4</option>
+      			<option value=5>5</option>
+      			<option value=6>6</option>
+      			<option value=7>7</option>
+      			<option value=8>8</option>
+      			<option value=9>9</option>
+      			<option value=10>10</option>
+      			<option value=11>11</option>
+      			<option value=12>12</option>
+      			<option value=13>13</option>
+      			<option value=14>14</option>
+      			<option value=15>15</option>
+      			<option value=16>16</option>
+      			<option value=17 selected>17</option>
+      			<option value=18>18</option>
+    		</select>人
+		</div>
+		
+		<div class="villageCreateContents">
+			<div class="villageCreateContentsName"><a href="/rolesets/roleset.html" target="_blank">配役セット</a></div>
+    		<select name="rolesetForm" id="rolesetForm">
+    			<option value="A" selected>A配役 (標準)</option>
+    			<option value="B">B配役 (少人数向け)</option>
+    			<option value="C">C配役 (役職多め)</option>
+    		</select>
+		</div>
+		
+		<div class="villageCreateContents">
+    		<div class="villageCreateContentsName">村の説明</div>
+    		<input type="textarea" name="villagePR" class="villageCreateTextarea" id="villagePR">
+    		<div class="villageCreateContentsBaloon">
+				最大30文字まで入力できます。
+			</div>
+    	</div>
+		
+		<div class="villageCreateContents">
+			<div class="villageCreateContentsName">GM制</div>
+    		<input type="checkbox" name="enableGM" id="enableGM" value="enableGM"/>
+    		<div class="villageCreateContentsBaloon">
+				チェックを入れるとGMありの村になります。<br>
+				(村に最初に入った人がGMになります)
+			</div>
+		</div>
+		
+		<div class="villageCreateContents">
+			<div class="villageCreateContentsName">昼の時間</div>
+    		<input type="text" name="daytimeForm" class="villageCreateTimeForm" id="daytimeForm" value=240>秒
+    		<div class="villageCreateContentsBaloon">10秒以上, 600秒以下で入力できます。</div>
+		</div>
+		
+		<div class="villageCreateContents">
+			<div class="villageCreateContentsName">投票時間</div>
+    		<input type="text" name="afternoonForm" class="villageCreateTimeForm" id="afternoonForm" value=90>秒
+    		<div class="villageCreateContentsBaloon">10秒以上, 300秒以下で入力できます。</div>
+		</div>
+		
+		<div class="villageCreateContents">
+			<div class="villageCreateContentsName">夜の時間</div>
+    		<input type="text" name="nightForm" class="villageCreateTimeForm" id="nightForm" value=150>秒
+    		<div class="villageCreateContentsBaloon">10秒以上, 600秒以下で入力できます。</div>
+		</div>
+		
+		<div class="villageCreateContents">
+			<div class="villageCreateContentsName">能力実行時間</div>
+    		<input type="text" name="dawnForm" class="villageCreateTimeForm" id="dawnForm" value=60>秒
+    		<div class="villageCreateContentsBaloon">10秒以上, 300秒以下で入力できます。</div>
+		</div>
+		
+		<div class="villageCreatePadding"></div>
+		
+		<div class="villageCreateContents">
+    		<div class="villageCreateContentsName">トリップ入村制限</div>
+    		<input type="checkbox" name="tripLimit" id="tripLimit" value="tripLimit" />
+    		戦績<input type="text" name="recordLimit" class="villageCreateTimeForm" id="recordLimit" value="0" />戦以上
+    		<div class="villageCreateContentsBaloon">
+				チェックを入れると、トリップキーをつけない<br>
+				HNのプレイヤーは入村できなくなります。<br>
+				また、トリップの戦績で入村制限をつけることができます。　
+			</div>
+    	</div>
+		
+		<div class="villageCreateContents">
+			<div class="villageCreateContentsName">猫又登場</div>
+    		<input type="checkbox" name="enableCat" id="enableCat" value="enableCat" />
+    		<div class="villageCreateContentsBaloon">
+				10人以上の村でチェックを入れると<br>配役に猫又が追加されます。<br>
+				(村人が2人減り、人狼と猫又を1人ずつ追加)
+			</div>
+		</div>
+		
+		<div class="villageCreateContents">
+			<div class="villageCreateContentsName">少女登場</div>
+    		<input type="checkbox" name="enableGirl" id="enableGirl" value="enableGirl" />
+    		<div class="villageCreateContentsBaloon">
+				10人以上の村でチェックを入れると<br>配役に少女が追加されます。<br>
+				(村人が2人減り、狂人と少女を1人ずつ追加)
+			</div>
+		</div>
+		
+		<div class="villageCreateContents">
+			<div class="villageCreateContentsName">妖術師登場</div>
+    		<input type="checkbox" name="enableWizard" id="enableWizard" value="enableWizard" />
+    		<div class="villageCreateContentsBaloon">
+				狂人が1人以上存在する村でチェックを入れると<br>配役に妖術師が追加されます。<br>
+				(狂人が1人減り、妖術師を1人追加)
+			</div>
+		</div>
+		
+		<div class="villageCreateContents">
+			<div class="villageCreateContentsName">アイコンセット</div>
+    		<select name="iconsetForm" id="iconsetForm">
+    			<option value="ALL">ALL</option>
+    			<option value="ねこっぷ">ねこっぷ</option>
+    			<option value="azuma">azuma</option>
+    			<option value="mtmt">mtmt</option>
+    			<option value="shirone">shirone</option>
+    			<option value="花のお江戸">花のお江戸</option>
+    			<option value="壱番街">壱番街</option>
+    			<option value="かりんか">かりんか</option>
+    			<option value="メトロポリス">メトロポリス</option>
+    			<option value="xx">xx</option>
+    		</select>
+    	</div>
+    	
+    	<div class="villageCreateContents">
+    		<div class="villageCreateContentsName">ランダムCN</div>
+    		<input type="checkbox" name="randomCN" id="randomCN" value="randomCN" />
+    		<div class="villageCreateContentsBaloon">
+				チェックを入れると、ゲーム開始時に<br>
+				アイコンが変更され、それに応じたCNに変更されます。
+			</div>
+    	</div>
+    	
+    	<div class="villageCreateContents">
+    		<div class="villageCreateContentsName">霊界表示無し</div>
+    		<input type="checkbox" name="hideRole" id="hideRole" value="hideRole" />
+    		<div class="villageCreateContentsBaloon">
+				チェックを入れると、ゲーム終了まで<br>
+				霊界に行っても他プレイヤーの役職が見えなくなります。
+			</div>
+    	</div>
+    	
+    	<div class="villageCreateContents">
+    		<div class="villageCreateContentsName">観戦者発言</div>
+    		<input type="checkbox" name="audienceUtter" id="audienceUtter" value="audienceUtter" checked/>
+    		<div class="villageCreateContentsBaloon">
+				チェックを入れると、観戦者が発言できるようになります。
+				(発言はGMと観戦者同士にのみ見えます)
+			</div>
+    	</div>
+    	
+    	<div class="villageCreateContents">
+    		<div class="villageCreateContentsName">○秒ルール</div>
+            <input type="text" name="silenceRuleValue" class="villageCreateTimeForm" id="silenceRuleValue" value="0" >秒
+            <div class="villageCreateContentsBaloon">
+				1秒以上の値を指定すると、生存者は昼の開始後<br>
+				指定した時間中発言できなくなります。<br>
+				(最大30秒)
+			</div>
+    	</div>
+    	
+    	<div class="villageCreateContents">
+    		<div class="villageCreateContentsName">生存者ソート</div>
+    		<input type="checkbox" name="listSort" id="listSort" value="listSort" />
+    		<div class="villageCreateContentsBaloon">
+				チェックを入れると、プレイヤーリストが<br>
+				生存者/死亡者の順にソートされるようになります。
+			</div>
+    	</div>
+    	
+    	<div class="villageCreateContents">
+    		<div class="villageCreateContentsName">投票時間の固定を解除</div>
+    		<input type="checkbox" name="voteSkip" id="voteSkip" value="voteSkip" />
+    		<div class="villageCreateContentsBaloon">
+				チェックを入れると、全生存者の投票完了で<br>
+				夕方のフェーズが即終了するようになります。
+			</div>
+    	</div>
+    	
+    	<div class="villageCreateContents">
+    		<div class="villageCreateContentsName">役職時間の固定を解除</div>
+    		<input type="checkbox" name="actionSkip" id="actionSkip" value="actionSkip" />
+    		<div class="villageCreateContentsBaloon">
+				チェックを入れると、人狼の襲撃は<br>
+				明け方の時間が半分以上経過後から可能になり<br>
+				襲撃が実行されるとすぐ昼になります。　
+			</div>
+    	</div>
+    	
+    	<div class="villageCreatePadding"></div>
+    	
+    	<div class="villageCreateContents">
+    		<div class="villageCreateContentsName">村建て告知しない</div>
+    		<input type="checkbox" name="noTweet" id="noTweet" value="noTweet" />
+    		<div class="villageCreateContentsBaloon">
+				チェックを入れると、この村が
+				建ったことはTwitterで告知されません。
+			</div>
+    	</div>
+    	
+    	<div class="villageCreatePadding"></div>
+    	
+    	<div class="villageCreatePadding">
+    		<input type="button" name="villageCreateBackButton" id="villageCreateBackButton" value="戻る"/>
+    		<input type="button" name="villageCreateButton" id="villageCreateButton" value="村を作成する"/>
+    	</div>
+    	
+    	<div class="villageCreatePadding"></div>
+    	<div class="villageCreatePadding"></div>
+	</form>
+</template>

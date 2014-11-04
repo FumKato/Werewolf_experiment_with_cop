@@ -1,0 +1,25 @@
+<template name="Lobby">
+	<div id="logo">
+		<img src="./images/Logo.png" alt="汝は人狼なりや　めておら鯖" width="60%" height="60%" />
+	</div>
+	<div id="caution">
+		<div id="accessCounter">
+			<div class="accessCounterItem">
+				<div class="accessCounterHead">通算</div>
+				<div class="accessCounterBody" id="totalAccessNum">--</div>
+			</div>
+			<div class="accessCounterItem">
+				<div class="accessCounterHead">最新5分</div>
+				<div class="accessCounterBody" id="latestAccessNum">--</div>
+			</div>
+		</div>
+		<div>汝は人狼なりや＠めておら鯖は、汝は人狼なりや 続わかめてエディション および るる鯖 のルールを基に</div>
+		<b>チャットログの自動更新機能</b>などを搭載した、中〜少人数向けの短期人狼サーバーです。
+	</div>
+	<div id="menu">{{> Menu}}</div>
+	<div class="lobbyContent" id="information">{{> Information}}</div>
+	<div class="lobbyContent" id="villageList">{{> VillageList}}</div>
+	<div class="lobbyContent" id="logVillageList">{{> LogVillageList}}</div>
+	<div class="lobbyContent" id="villageCreateMenu">{{> VillageCreateMenu}}</div>
+	<div class="lobbyContent" id="login">{{> Login}}</div>
+</template>

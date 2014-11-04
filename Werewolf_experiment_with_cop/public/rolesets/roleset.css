@@ -1,0 +1,97 @@
+.specialRoleCaution{
+	width: 800px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.rolesetName {
+	width: 650px;
+	text-align: center;
+}
+
+.quotaHead{
+	width: 80px;
+}
+
+.quotaBody{
+	text-align: right;
+}
+
+.villagerHead{
+	width: 80px;
+}
+
+.villagerBody{
+	
+}
+
+.wolfHead{
+	width: 80px;
+	background-color: #FF5500;
+}
+
+.wolfBody{
+	width: 80px;
+	background-color: #FFEEBB;
+}
+
+
+.seerHead{
+	width: 80px;
+	background-color: #FF66FF;
+}
+
+.seerBody{
+	width: 80px;
+	background-color: #FFDDFF;
+}
+
+.mediumHead{
+	width: 80px;
+	background-color: #6666FF;
+}
+
+.mediumBody{
+	width: 80px;
+	background-color: #DDDDFF;
+}
+
+.fanaticHead{
+	width: 80px;
+	background-color: #FF9999;
+}
+
+.fanaticBody{
+	width: 80px;
+	background-color: #FFEEEE;
+}
+
+.hunterHead{
+	width: 80px;
+	background-color: #9999FF;
+}
+
+.hunterBody{
+	width: 80px;
+	background-color: #EEEEFF;
+}
+
+.masonHead{
+	width: 80px;
+	background-color: #9acd32;
+}
+
+.masonBody{
+	width: 80px;
+	background-color: #EFFF8F;
+}
+
+.foxHead{
+	width: 80px;
+	background-color: #FFd700;
+}
+
+.foxBody{
+	width: 80px;
+	background-color: #FFFD96;
+}

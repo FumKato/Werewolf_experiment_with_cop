@@ -1,0 +1,142 @@
+body {
+	font-family: 'Helvetica Neue', Helvetica, 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック', Arial, sans-serif;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#howto {
+	width: 650px;
+	min-width: 100px;
+	margin: 0 auto;
+}
+
+#title {
+	width: 650px;
+	font-size: 50px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.line {
+    float:left;
+    width: 650px;
+    height: 5px;
+    border-bottom: 1px solid gray;
+    margin: 0 auto;
+}
+
+
+.dline {
+    float:left;
+    width: 650px;
+    height: 5px;
+    border-bottom: 1px dashed gray;
+}
+
+#index {
+	width: 650px;
+	margin: 0 auto;
+}
+
+.indexItem{
+	
+}
+
+.topic {
+	width: 400px;
+	height: 25px;
+	background-color: #aaaaFF;
+	color: #000080;
+	margin-top: 10px;
+	font-size: large;
+	font-weight: bold;
+	border-bottom: 2px solid #000080;
+	border-left: 10px solid #000080;
+}
+
+.contents {
+	width: 650px;
+	min-height: 10px;
+}
+
+.paragraph{
+	width: 650px;
+	min-height: 10px;
+	margin-top: 5px;
+}
+
+.image {
+	width: 650px;
+	min-height: 10px;
+	margin-top: 3px;
+	text-align: center;
+}
+
+.subtopic {
+	width: 220px;
+	height: 25px;
+	color: #000080;
+	margin-top: 10px;
+	font-size: large;
+	border-bottom: 2px solid #000080;
+	border-left: 10px solid #000080;	
+}
+
+.rolesTopic{
+	margin-top: 10px;
+	width: 650px;
+	height: 55px;
+}
+
+.roleSubTopic{
+	float: left;
+}
+
+.roleIcon{
+	float: left;
+}
+
+.roleTopicPadding{
+	width: 590px;
+	height: 10px;
+	float: left;
+}
+
+.midtopic {
+	width: 100px;
+	font-weight: bold;
+	color: #000080;
+	border-bottom: 2px solid #000080;
+	margin-top: 10px;
+	font-size: large;
+}
+
+.enphasize {
+	font-weight: bold;
+	color: #FF5500;
+}
+
+.item {
+	width: 200px;
+	font-weight: bold;
+	color: #000080;
+	border-bottom: 2px solid #000080;
+	margin-top: 10px;
+	font-size: large;
+}
+
+.prev {
+	width: 250px;
+	height: 100px;
+	float: left;
+}
+
+.next {
+	width: 250px;
+	height: 100px;
+	float: right;
+	text-align: right;
+}

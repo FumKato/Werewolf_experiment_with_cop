@@ -1,0 +1,666 @@
+div#village{
+	width: 1000px;	
+}
+
+div#chatLog{
+	width: 671px;
+	float: left;
+}
+
+div#logSelector{
+	width: 671px;
+	min-height:20px;
+	float: left;
+}
+
+.logSelectorItem{
+	min-width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	border: solid 1px gray;
+	border-radius: 5px;
+	float: left;
+	cursor: pointer;
+}
+
+div#subSelector{
+	width: 671px;
+	min-height: 20px;
+	float: left;
+}
+
+.subSelectorLabel{
+	min-width: 20px;
+	height: 20px;
+	float: left;
+}
+
+.subSelectorItem{
+	width: 45px;
+	height: 20px;
+	border: solid 1px gray;
+	border-radius: 5px;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+}
+
+div#playerList{
+	width: 325px;
+	min-height: 400px;
+	margin-top: 5px;
+	float: right;
+}
+
+div#rightSideContents{
+	width: 325px;
+	min-height: 400px;
+	margin-top: 10px;
+	float: right;
+}
+
+div#villageInformation{
+	width: 1000px;
+	height: 50px;
+	float: left;
+}
+
+div#villageBaseInformation {
+	width: 500px;
+	height: 50px;
+	color: #FFFFFF;
+	float: left;
+}
+
+div#villageOptionInformation {
+	width: 323px;
+	
+	float: right;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;  
+    border-radius: 8px;
+    border: 1px solid #000;
+	
+	color: #000;
+	background-image: url("../images/bg_y01.jpg");
+}
+
+div#villageNumber {
+	width: 500px;
+	height: 15px;
+	font-size: 10px;
+	float: left;
+	
+	-webkit-border-radius: 0% 7px 7px 0% / 0% 7px 7px 0%;
+    -moz-border-radius: 0% 7px 7px 0% / 0% 7px 7px 0%;
+    border-radius: 0% 7px 7px 0% / 0% 7px 7px 0%;
+	
+	box-shadow: 1px 1px 2px #000;
+	-moz-box-shadow: 1px 1px 1px #000;
+	-webkit-box-shadow: 1px 1px 1px #000;
+	
+	border: 1px solid #000;
+	border-bottom: none;
+	background-image: url("../images/head004_06.gif");
+}
+
+div#villageName {
+	width: 500px;
+	height: 30px;
+	float: left;
+	
+	-webkit-border-radius: 0% 15px 15px 0% / 0% 15px 15px 0%;
+    -moz-border-radius: 0% 15px 15px 0% / 0% 15px 15px 0%;
+    border-radius: 0% 15px 15px 0% / 0% 15px 15px 0%;
+	
+	box-shadow: 2px 2px 2px #777;
+	-moz-box-shadow: 2px 2px 2px #777;
+	-webkit-box-shadow: 2px 2px 2px #777;
+	
+	background-image: url("../images/head004_06.gif");
+	border: 1px solid #000;
+}
+
+span.villageNameBody {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+div.hiddenImage {
+	display: none;
+}
+
+div#rolesetBaseInformation{
+	width: 135px;
+	height: 50px;
+	margin-left: 10px;
+	float: left;
+	
+	-webkit-border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    border-radius: 7px 7px 7px 7px;
+
+    box-shadow: 2px 2px 2px #777;
+	-moz-box-shadow: 2px 2px 2px #777;
+	-webkit-box-shadow: 2px 2px 2px #777;
+	
+	color: #FFF;
+	background-image: url("../images/btn055_05.gif");
+	border:solid 1px #000;
+}
+
+div#rolesetOptionInformation{
+	width: 200px;
+	min-height: 50px;
+	margin-left: 10px;
+	float: left;
+	
+	-webkit-border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    border-radius: 7px 7px 7px 7px;
+
+    box-shadow: 2px 2px 2px #777;
+	-moz-box-shadow: 2px 2px 2px #777;
+	-webkit-box-shadow: 2px 2px 2px #777;
+	
+	color: #FFF;
+	background-image: url("/images/btn055_05.gif");
+	border:solid 1px #000;
+	
+}
+
+div#roleset {
+	width: 135px;
+	height: 20px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	float: left;
+	
+	-webkit-border-radius: 7px 7px 0px 0px;
+    -moz-border-radius: 7px 7px 0px 0px;
+    border-radius: 7px 7px 0px 0px;
+	
+	border: none;
+}
+
+div#participantsNumber {
+	width: 135px;
+	height: 28px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	float: left;
+	
+	-webkit-border-radius: 0px 0px 7px 7px;
+    -moz-border-radius: 0px 0px 7px 7px;
+    border-radius: 0px 0px 7px 7px;
+}
+
+div.gmPlayerListItem{
+	width: 280px;
+	margin-left: 20px;
+	margin-top: 1px;
+	margin-bottom: 10px;
+	border: solid 1px gray;
+	float: left;
+}
+
+div.playerListItem{
+	width: 160px;
+	border: solid 1px gray;
+	float: left;
+}
+
+.playerIcon {
+	width: 33px;
+	height: 50px;
+	
+	border: solid 1px gray;
+	border-top: none;
+	border-left: none;
+	float: left;
+}
+
+div.characterName {
+	width: 120px;
+	height: 26px;
+	
+	float: left;
+}
+
+div.handleName {
+	width: 120px;
+	height: 26px;
+	
+	border: none;
+	float: right;
+}
+
+div.tripKey {
+	width: 90px;
+	height: 20px;
+	
+	border: none;
+	font-size: 13px;
+	float: left;
+}
+
+div.state {
+	width: 70px;
+	height: 20px;
+	
+	text-align:center;
+	border: none;
+	float: left;
+}
+
+div.role {
+	width: 80px;
+	height: 20px;
+	
+	text-align:center;
+	border: none;
+	float: left;
+}
+
+.deadPlayerList {
+	width: 160px;
+	border: solid 1px gray;
+	float: left;
+	background-color: gray;
+	color: #FFFFFF;
+}
+
+.night {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+.dawn {
+	color: #FFFFFF;
+	background-color: #000033;
+}
+
+.afternoon {
+	background-color: #FFCCCC;
+}
+
+.wolfOrGM {
+	color: #FF0000;
+}
+
+.seer {
+	color: #CC00FF;
+}
+
+.medium {
+	color: #0000FF;
+}
+
+.fanatic {
+	color: #FF66FF;
+}
+
+.mason {
+	color: #00FF00;
+}
+
+.hunter {
+	color: #0099FF;
+}
+
+.fox {
+	color: #FFAA33;
+}
+
+.cat {
+	color: #00FF99;
+}
+
+.girl {
+	color: #FF5500;
+}
+
+table#log {
+    float:left;
+    width:675px;
+    table-layout: fixed;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    word-break:break-all;
+    word-wrap:break-word;
+}
+
+td {
+	border-top: solid gray 1px;
+	border-bottom: solid gray 1px;
+	border-right: solid gray 3px;
+}
+
+.logNameHeader {
+	width: 151px;
+}
+
+.logSentenceHeader{
+	width: 508px;
+}
+
+.ghostChatLog {
+	background-color: gray;
+	color: #FFFFFF;
+}
+
+.audienceChatLog{
+	background-color: #929292;
+	color: #FFFFFF;
+}
+
+.logName {
+	width: 160px;
+}
+
+.logSentence {
+	width: 480px;
+}
+
+.result {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.draw {
+	color: gray;
+}
+
+.GMName {
+	color: #FF0000;
+}
+
+.colored {
+	color:#5511FF;
+}
+
+.mason {
+	color: #00FF00;
+}
+
+.wolf {
+	color: #FF0000;
+}
+
+.logSelectorItemMouseovered{
+	background-color: #FFAA33;
+}
+
+.logSelectorItemClicked {
+	min-width: 20px;
+	height: 20px;
+	border: solid 1px gray;
+	margin-right: 5px;
+	border-radius: 5px;
+	float: left;
+	cursor: pointer;
+	background-color: #FF5500;
+}
+
+.subSelectorItemClicked{
+	width: 45px;
+	height: 20px;
+	border: solid 1px gray;
+	border-radius: 5px;
+	float: left;
+	cursor: pointer;
+	background-color: #000055;
+	text-align: center;
+	color: #FFF;
+}
+
+.redIcon {
+	border-left: 5px solid #FF0000;
+}
+
+.redBorder {
+	border-bottom: 2px solid #FF0000;
+}
+
+.greenIcon {
+	border-left: 5px solid #008000;
+}
+
+.greenBorder {
+	border-bottom: 2px solid #00FF00;
+}
+
+.blueIcon {
+	border-left: 5px solid #0000FF;
+}
+
+.blueBorder{
+	border-bottom: 2px solid #0000FF;
+}
+
+.pinkIcon{
+	border-left: 5px solid #FF69B4;
+}
+
+.pinkBorder{
+	border-bottom: 2px solid #FF69B4;
+}
+
+.yellowIcon{
+	border-left: 5px solid #FFFF00;
+}
+
+.yellowBorder{
+	border-bottom: 2px solid #FFFF00;
+}
+
+.navyIcon{
+	border-left: 5px solid #000080;
+}
+
+.navyBorder{
+	border-bottom: 2px solid #000080;
+}
+
+.orangeIcon{
+	border-left: 5px solid #FFA500;
+}
+
+.orangeBorder{
+	border-bottom: 2px solid #FFA500;
+}
+
+.crimsonIcon{
+	border-left: 5px solid #DC143C;
+}
+
+.crimsonBorder{
+	border-bottom: 2px solid #DC143C;
+}
+
+.greenyellowIcon{
+	border-left: 5px solid #7FFF00;
+}
+
+.greenyellowBorder{
+	border-bottom: 2px solid #7FFF00;
+}
+
+.brownIcon{
+	border-left: 5px solid #8B4513;
+}
+
+.brownBorder{
+	border-bottom: 2px solid #8B4513;
+}
+
+.aquaIcon{
+	border-left: 5px solid #00FFFF;
+}
+
+.aquaBorder{
+	border-bottom: 2px solid #00FFFF;
+}
+
+.purpleIcon{
+	border-left: 5px solid #800080;
+}
+
+.purpleBorder{
+	border-bottom: 2px solid #800080;
+}
+
+.blackIcon{
+	border-left: 5px solid #000000;
+}
+
+.blackBorder{
+	border-bottom: 2px solid #000000;
+}
+
+.silverIcon{
+	border-left: 5px solid #C0C0C0;
+}
+
+.silverBorder{
+	border-bottom: 2px solid #C0C0C0;
+}
+
+.darkgreenIcon{
+	border-left: 5px solid #556B2F;
+}
+
+.darkgreenBorder{
+	border-bottom: 2px solid #556B2F;
+}
+
+.royalblueIcon{
+	border-left: 5px solid #4169E1;
+}
+
+.royalblueBorder{
+	border-bottom: 2px solid #4169E1;
+}
+
+.bluegreenIcon{
+	border-left: 5px solid#008080;
+}
+
+.bluegreenBorder{
+	border-bottom: 2px solid #008080;
+}
+
+.indigoIcon{
+	border-left: 5px solid #4B0082;
+}
+
+.indigoBorder{
+	border-bottom: 2px solid #4B0082;
+}
+
+.bluevioletIcon{
+	border-left: 5px solid #8A2BE2;
+}
+
+.bluevioletBorder{
+	border-bottom: 2px solid #8A2BE2;
+}
+
+.darkredIcon{
+	border-left: 5px solid #8B0000;
+}
+
+.darkredBorder{
+	border-bottom: 2px solid #8B0000;
+}
+
+.coralIcon{
+	border-left: 5px solid #FF7F50;
+}
+
+.coralBorder{
+	border-bottom: 2px solid #FF7F50;
+}
+
+.lightpinkIcon{
+	border-left: 5px solid #FFB6C1;
+}
+
+.lightpinkBorder{
+	border-bottom: 2px solid #FFB6C1;
+}
+
+.noneIcon{
+	border-left: 5px solid gray;
+}
+
+.noColorIcon{
+	border-left: 3px solid gray;
+}
+
+.gmColorIcon{
+	width: 240px;
+	height: 1px;
+	float: left;
+}
+
+.quoteLabel {
+	color: #0000DD;
+	cursor: pointer;
+	float: left;
+}
+
+.quoteContent{
+	width: 350px;
+	display: none;
+	font-size: 15px;
+	position: absolute;
+	word-break: break-all;
+	border: solid 1px #000055;
+	background-color: #BBBBFF;
+}
+
+.quoteContentHeader{
+	width: 350px;
+	height: 20px;
+	background-color: #0000AA;
+	color: #FFF;
+}
+
+.quoteContentBody{
+	color: #000055;
+}
+
+.chatLogQuoteWrapper{
+	width: 506px;
+	float: left;
+}
+
+.voteResultLine{
+	width: 480px;
+	float:left;
+}
+
+.voteResultName{
+	width: 135px;
+	text-align: right;
+	float: left;
+}
+
+.voteResultNumber{
+	width:90px;
+	text-align: center;
+	float: left;
+}
+
+.voteResultTarget{
+	width: 135px;
+	text-align: left;
+	float: left;
+}

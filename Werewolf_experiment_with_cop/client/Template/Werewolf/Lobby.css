@@ -1,0 +1,94 @@
+div#information{
+	width: 742px;
+	min-height: 80px;
+	float: right;
+	
+	border: 1px solid #000055;
+	border-left: 5px solid #000055;
+	border-right: 5px solid #000055;
+}
+
+div#login{
+	display: none;
+	width: 750px;
+	margin-top: 30px;
+	float: right;
+}
+
+div#logo {
+	float: right;
+	width: 800px;
+	text-align: center;
+
+	cursor: pointer;
+}
+
+div#accessCounter{
+	width: 150px;
+	height: 36px;
+	float: right;
+}
+
+div.accessCounterItem{
+	width: 145px;
+	height: 15px;
+	margin-top: 1px;
+	text-align: right;
+	border-top: 1px solid #000055;
+	border-bottom: 1px solid #000055;
+	border-right: 5px solid #000055;
+}
+
+div.accessCounterHead{
+	width: 50px;
+	height: 15px;
+	float: left;
+	text-align: right;
+	background-color: #000055;
+	color: #FFFFFF;
+}
+
+div.accessCounterBody{
+	width: 95px;
+	height: 15px;
+	float: right;
+}
+
+div#caution{
+	width: 750px;
+	height: 36px;
+	font-size: 12px;
+	float: right;
+}
+
+div#logVillageList{
+	display: none;
+	float: right;
+	width: 750px;
+}
+
+div#menu{
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+
+div#villageCreateMenu{
+	display: none;
+	width: 750px;
+	margin-top: 20px;
+	float: right;
+}
+
+div#villageList{
+	width: 750px;
+	min-height: 100px;
+	margin-top: 10px;
+	float: right;
+}
+
+#tweetIcon{
+	margin-top: 50px;
+	float: left;
+}

@@ -1,0 +1,57 @@
+<template name="Overlays">
+	<div class="overlay" id="loginOverlay">
+		<div class="overlayContents" id="iconSelect">
+			<div class="iconList">
+				{{> IconList}}
+			</div>
+			<div class="overlayButtons">
+				<input type="button" name="loginOverlayBackButton" class="overlayBackButton" value="戻る"/>
+				<input type="button" name="enter" class="overlayEnterButton" id="loginOverlayEnterButton" value="決定"/>
+			</div>
+		</div>
+	</div>
+	
+	<div class="overlay" id="kickMenuOverlay">
+		{{> KickMenuOverlay}}
+	</div>
+	
+	<div class="overlay" id="nameChangeOverlay">
+		{{> NameChangeOverlay}}
+	</div>
+	
+	<div class="overlay" id="villageSettingsChangeOverlay">
+		{{> VillageSettingsChangeOverlay}}
+	</div>
+	
+	<div class="overlay" id="killMenuOverlay">
+		{{> KillMenuOverlay}}
+	</div>
+	
+	<div class="overlay" id="voteMenuOverlay">
+		{{> VoteMenuOverlay}}
+	</div>
+	
+	<div class="overlay" id="seeMenuOverlay">
+		{{> SeeMenuOverlay}}
+	</div>
+	
+	<div class="overlay" id="guardMenuOverlay">
+		{{> GuardMenuOverlay}}
+	</div>
+	
+	<div class="overlay" id="nightWalkMenuOverlay">
+		{{> NightWalkMenuOverlay}}
+	</div>
+	
+	<div class="overlay" id="magicMenuOverlay">
+		{{> MagicMenuOverlay}}
+	</div>
+	
+	<div class="overlay" id="reportMenuOverlay">
+		{{> ReportMenuOverlay}}
+	</div>
+	
+	<div class="overlay" id="villageScheduleOverlay">
+		{{> VillageScheduleOverlay}}
+	</div>
+</template>

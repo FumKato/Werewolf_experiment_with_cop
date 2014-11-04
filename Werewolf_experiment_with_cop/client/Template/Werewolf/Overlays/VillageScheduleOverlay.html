@@ -1,0 +1,117 @@
+<template name="VillageScheduleOverlay">
+	<div class="overlayContents" id="villageScheduleForm">
+			<div class="overlayContentsPadding"></div>
+			<div class="loginFormContents">
+				<div class="loginFormContentsName">登録者名</div>
+				<input type="text" class="loginFormTextarea" name="villageScheduleName"/>
+				<div class="loginFormContentsBaloon">
+					開催予定に表示される名前を入力します<br>
+					登録者名の後に続けて、半角の # と任意の文字列でトリップキーを指定できます<br>
+					(登録者名8文字, #を除いてトリップキー10文字まで入力できます)
+				</div>
+			</div>
+			<div class="loginFormContents">
+				<div class="loginFormContentsName">村建て予定日時</div>
+				<select name="villageShceduleMonth" id="villageScheduleMonth" class="villageScheduleFormContents"></select>
+				<select name="villageShceduleDate" id="villageScheduleDate" class="villageScheduleFormContents"></select>
+				<select name="villageShceduleHours" id="villageScheduleHours" class="villageScheduleFormContents">
+					<option value="0">0時</option>
+					<option value="1">1時</option>
+					<option value="2">2時</option>
+					<option value="3">3時</option>
+					<option value="4">4時</option>
+					<option value="5">5時</option>
+					<option value="6">6時</option>
+					<option value="7">7時</option>
+					<option value="8">8時</option>
+					<option value="9">9時</option>
+					<option value="10">10時</option>
+					<option value="11">11時</option>
+					<option value="12">12時</option>
+					<option value="13">13時</option>
+					<option value="14">14時</option>
+					<option value="15">15時</option>
+					<option value="16">16時</option>
+					<option value="17">17時</option>
+					<option value="18">18時</option>
+					<option value="19">19時</option>
+					<option value="20">20時</option>
+					<option value="21" selected>21時</option>
+					<option value="22">22時</option>
+					<option value="23">23時</option>
+				</select>
+				<select name="villageScheduleMinutes" id="villageScheduleMinutes" class="villageScheduleFormContents">
+					<option value="0">0分</option>
+					<option value="10">10分</option>
+					<option value="20">20分</option>
+					<option value="30">30分</option>
+					<option value="40">40分</option>
+					<option value="50">50分</option>
+				</select>
+				頃
+			</div>
+			<div class="loginFormContents">
+				<div class="loginFormContentsName">予定配役</div>
+				<select name="villageScheduleQuota" id="villageScheduleQuota" class="villageScheduleFormContents">
+      				<option value=4>4人</option>
+      				<option value=5>5人</option>
+      				<option value=6>6人</option>
+      				<option value=7>7人</option>
+      				<option value=8>8人</option>
+      				<option value=9>9人</option>
+      				<option value=10>10人</option>
+      				<option value=11>11人</option>
+      				<option value=12>12人</option>
+      				<option value=13>13人</option>
+      				<option value=14>14人</option>
+      				<option value=15>15人</option>
+      				<option value=16>16人</option>
+      				<option value=17 selected>17人</option>
+      				<option value=18>18人</option>
+    			</select>
+    			<select name="villageScheduleRoleset" id="villageScheduleRoleset" class="villageScheduleFormContents">
+    				<option value="A" selected>A配役 (標準)</option>
+    				<option value="B">B配役 (少人数向け)</option>
+    				<option value="C">C配役 (役職多め)</option>
+    			</select>
+			</div>
+			<div class="loginFormContents">
+				<div class="loginFormContentsName">追加役職</div>
+				　猫又:<input type="checkbox" id="villageScheduleCat" name="villageScheduleCat" />
+    			少女:<input type="checkbox" id="villageScheduleGirl" name="villageScheduleGirl" />
+    			妖術師:<input type="checkbox" id="villageScheduleWizard" name="villageScheduleWizard" />
+    			<div class="loginFormContentsBaloon">
+					猫又,少女: 10人以上の村で登場します。<br>
+					(村人が2人減り、人狼・狂人と猫又・少女を1人ずつ追加)<br>
+					妖術師: 狂人の代わりに登場します。<br>
+					(狂人が1人減り、妖術師を1人追加)
+				</div>
+			</div>
+			<div class="loginFormContents">
+				<div class="loginFormContentsName">備考</div>
+				<textarea name="villageSchedulePR" id="villageSchedulePR" class="villageScheduleFormContents villageSchedulePRForm"></textarea>
+    			<div class="loginFormContentsBaloon">
+					150文字まで入力できます
+				</div>
+			</div>
+			<div class="loginFormContents">
+				<div class="loginFormContentsName">パスワード</div>
+				<input type="password" class="loginFormTextarea" name="villageSchedulePassword"/>
+				<div class="loginFormContentsBaloon">
+					登録した開催予定を削除する際に必要なパスワードです。<br>
+					4〜8文字で入力してください
+				</div>
+			</div>
+			<div class="loginFormContents">
+				<div class="loginFormContentsName">Twitter告知なし</div>
+				　<input type="checkbox" id="villageScheduleNoTweet" name="villageScheduleNoTweet" />
+    			<div class="loginFormContentsBaloon">
+					チェックすると、この村建て予定が登録されたことは、Twitterで告知されません
+				</div>
+			</div>
+			<div class="overlayButtons">
+				<input type="button" name="back" class="overlayBackButton" value="戻る" />
+				<input type="button" name="executeVillageScheduleCreation" class="overlayEnterButton" value="登録"/>
+			</div>
+	</div>
+</template>

@@ -1,0 +1,125 @@
+.playerIcon {
+	width: 33px;
+	height: 50px;
+	
+	border: solid 1px gray;
+	border-top: none;
+	border-left: none;
+	float: left;
+}
+
+div.characterName {
+	width: 120px;
+	height: 26px;
+	
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	float: left;
+}
+
+div.handleName {
+	width: 120px;
+	height: 26px;
+	
+	border: none;
+	float: right;
+}
+
+div.tripKey {
+	width: 90px;
+	height: 20px;
+	
+	border: none;
+	font-size: 13px;
+	float: left;
+}
+
+div.record {
+	width: 50px;
+	height: 20px;
+	
+	border: none;
+	text-align: center;
+	float: right;
+}
+
+div.state {
+	width: 70px;
+	height: 20px;
+	
+	text-align:center;
+	border: none;
+	float: left;
+}
+
+div.logCount {
+	width: 30px;
+	height: 20px;
+	
+	text-align: center;
+	border: none;
+	float: right;
+}
+
+div.role {
+	width: 80px;
+	height: 20px;
+	
+	text-align:center;
+	border: none;
+	float: left;
+}
+
+div.region{
+	width: 110px;
+	height: 20px;
+	
+	overflow: hidden;
+	text-align: center;
+	border: none;
+	float: left;
+}
+
+.regionBody{
+	font-size: 11px;
+}
+
+.deadPlayerList {
+	width: 160px;
+	border: solid 1px gray;
+	color: #FFFFFF;
+	float: left;
+	cursor: pointer;
+	background-color: gray;
+}
+
+.nonReady{
+	color: #FF0000;
+}
+
+.playerListMouseovered {
+	background-color: #FFAA33;
+}
+
+.deadPlayerListMouseovered {
+	background-color: #9999FF;
+}
+
+.playerListClicked {
+	width: 160px;
+	border: solid 1px gray;
+	float: left;
+	cursor: pointer;
+	background-color: #FF5500;
+}
+
+
+.deadPlayerListClicked {
+	width: 160px;
+	border: solid 1px gray;
+	float: left;
+	cursor: pointer;
+	background-color: #4444FF;
+	color: #FFFFFF;
+}

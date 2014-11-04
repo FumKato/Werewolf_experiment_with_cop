@@ -1,0 +1,20 @@
+.gmPlayerListClicked {
+	width: 280px;
+	margin-left: 20px;
+	margin-top: 1px;
+	margin-bottom: 10px;
+	border: solid 1px gray;
+	float: left;
+	cursor: pointer;
+	background-color: #FF5500;
+}
+
+.gmPlayerListMouseovered {
+	background-color: #FFAA33;
+}
+
+.gmColorIcon{
+	width: 240px;
+	height: 1px;
+	float: left;
+}

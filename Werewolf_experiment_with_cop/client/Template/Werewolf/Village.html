@@ -1,0 +1,26 @@
+<template name="Village">
+	<div id="villageInformation">{{> VillageInformation}}</div>
+	<div id="rightSideContents">
+		<div id="helpWindow">
+			<div id="helpWindowHead">HELP</div>
+			<div id="helpWindowContent"></div>
+		</div>
+    	<div id="roleInformation">{{> RoleInformation}}</div>
+    	<div id="quoteMemo">
+    		<div id="quoteMemoHead">引用Memo</div>
+			<div class="quoteMemoDeleteButton">×</div>
+			<div id="quoteMemoBody"></div>
+		</div>
+    	<div id="viewOptions">{{> ViewOptions}}</div>
+    	<div id="playerList">{{> PlayerList}}</div>
+  	</div>
+  	<div id="textForm">{{> TextForm}}</div>
+  	<div id="quoteForm">{{> QuoteForm}}</div>
+  	<div id="timers">{{> Timers}}</div>
+  	<div id="systemWindow" onselectstart="return false;">{{> SystemWindow}}</div>
+  	<div id="GMMenu">{{> GMMenu}}</div>
+	<div id="actionButton">{{> ActionButton}}</div>
+	<div id="extraMenu">{{> ExtraMenu}}</div>
+	<div id="logSelector">{{> LogSelector}}</div>
+	<div id="chatLog">{{> ChatLog}}</div>
+</template>

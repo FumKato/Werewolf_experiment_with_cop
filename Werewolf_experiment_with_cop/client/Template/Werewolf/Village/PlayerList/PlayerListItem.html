@@ -1,0 +1,10 @@
+<template name="PlayerListItem">
+	{{{getPlayerIcon icon}}}
+	<div class="characterName {{color}}Border">{{characterName}}</div>
+	{{{getHandleNameAndTripKey handleName tripKey}}}
+	<div class="logCount">[{{getLogCount logCount}}]</div>
+	<div class="state">[{{state}}]</div>
+	<div class="role">{{{getRole _id}}}</div>
+	{{{getRegion region}}}
+	{{{getRecord record}}}
+</template>

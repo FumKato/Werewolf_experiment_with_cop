@@ -1,0 +1,7 @@
+.extraMenuButton{
+	height: 30px;
+	float: right;
+	-webkit-appearance: none;
+	margin-top: 5px;
+	margin-left: 10px;
+}

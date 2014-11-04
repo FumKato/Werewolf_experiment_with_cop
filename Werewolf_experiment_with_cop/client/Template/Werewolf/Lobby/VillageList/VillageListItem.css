@@ -1,0 +1,83 @@
+.villageListItemHeader {
+	width: 740px;
+	height: 15px;
+	background-color: #AAAAFF;
+	border: none;
+	font-size: 12px;
+	font-weight: bold;
+	float: left;
+	z-index: 2;
+}
+
+.villageListItemName {
+	width: 740px;
+	height: 30px;
+	border: none;
+	background-color: #AAAAFF;
+	font-size: 23px;
+	float: left;
+	z-index: 2;
+}
+
+.villageListItemPR {
+	width: 498px;
+	height: 30px;
+	border: 1px solid #AAAAFF;
+	border-bottom: none;
+	font-size: 15px;
+	float:left;
+}
+
+.villageListItemPhase {
+	width: 240px;
+	height: 30px;
+	border: none;
+	border-top: 1px solid #AAAAFF;
+	font-size: 20px;
+	text-align: center;
+	float: right;
+}
+
+.villageListItemRoleset {
+	width: 240px;
+	height: 24px;
+	border: none;
+	border-top: 1px solid #AAAAFF;
+	font-size: 20px;
+	text-align: center;
+	float: right;
+}
+
+.villageListItemParticipants {
+	width: 240px;
+	height: 24px;
+	border: none;
+	border-bottom: 1px solid #AAAAFF;
+	font-size: 20px;
+	text-align: center;
+	float: right;
+}
+
+.villageListItemOptions {
+	width: 498px;
+	height: 48px;
+	border: 1px solid #AAAAFF;
+	font-size: 12px;
+	float: left;
+}
+
+.villageListItemMouseovered {
+	background-color: #FFFFBF;
+	z-index: 1;
+}
+
+.gatheringGM {
+	width: 240px;
+	height: 24px;
+	border: none;
+	border-bottom: 1px solid #AAAAFF;
+	font-size: 20px;
+	text-align: center;
+	float: right;
+	color: #FF0000;
+}

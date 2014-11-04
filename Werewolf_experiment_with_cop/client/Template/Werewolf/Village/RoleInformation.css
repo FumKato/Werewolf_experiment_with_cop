@@ -1,0 +1,65 @@
+div#roleIcon {
+	width: 53px;
+	height: 53px;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	float: left;
+}
+
+div#roleBaseMessage {
+	width: 270px;
+	height: 54px;
+	border: none;
+	float: left;
+}
+
+div#roleDetailMessage {
+	width: 325px;
+	height: 47px;
+	font-size: 12px;
+	border: none;
+	float: left;
+}
+
+#roleName {
+	width: 150px;
+	height: 54px;
+	border: none;
+	font-size: 30px;
+}
+
+.wolfOrGM {
+	color: #FF0000;
+}
+
+.seer {
+	color: #CC00FF;
+}
+
+.medium {
+	color: #0000FF;
+}
+
+.fanatic {
+	color: #FF66FF;
+}
+
+.mason {
+	color: #00FF00;
+}
+
+.hunter {
+	color: #0099FF;
+}
+
+.fox {
+	color: #FFAA33;
+}
+
+.cat {
+	color: #00FF99;
+}
+
+.girl {
+	color: #FF5500;
+}

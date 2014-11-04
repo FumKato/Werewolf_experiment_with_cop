@@ -1,0 +1,449 @@
+＊名前は全角7.5文字までに納めること
+
+0,猫又 こま
+1,みけ猫 おたふく
+2,でふ猫 十文字
+3,仔猫 みぃ
+4,くろ猫 まろ
+5,虎猫 とらえもん
+6,しろ猫 玉三郎
+7,野良猫 三味線
+8,白黒猫 囲碁丸
+9,はは猫 さんご
+10,さば猫 ひめ
+11,飼い猫 てまり
+12,ぶち猫 野菊
+13,我輩猫 まだない
+14,雌猫 ひややっ子
+15,おす猫 おにぎり
+16,しのび猫 しじま
+17,さび猫 なまくら
+18,異国猫 るーしゃ
+19,灰猫 まんじゅ
+20,金目銀目 たから
+21,片目 マサムネ
+22,茶猫 よね
+23,老猫 仙
+24,泥棒猫 キバ丸
+25,若猫 はづき
+26,迷い猫　きぬいと
+27,芸猫 風鈴
+28,武芸猫 小鉄
+29,ぎょろ目 雷太
+30,けが猫 うねね
+31,アーベル
+32,エーリッヒ
+33,マテウス
+34,オトフリート
+35,カルル
+36,ティル
+37,ザムエル
+38,ハンス
+39,ベアトリーチェ
+40,アマンダ
+41,イレーネ
+42,エルザ
+43,ノーラ
+44,ヨハナ
+45,ミリィ
+46,ユーディット
+47,ミハエル
+48,ギュンター
+49,ダーヴィッド
+50,ユリアン
+51,クレメンス
+52,ハイリンヒ
+53,リディ
+54,ブリジット
+55,ヘルガ
+56,ナターリエ
+57,フォルカー
+58,エーファ
+59,ヴィリー
+60,ライヒアルト
+61,フーゴー
+62,ローザ
+63,ウェンデル
+64,ゼルギウス
+65,カヤ
+66,ベッティ
+67,クロエ
+68,カルメン
+69,レナーテ
+70,ロミ
+71,ゲルダ
+72,イヴァン
+73,オクタヴィア
+74,ヘルムート
+75,バルトン
+76,バートン
+77,メノミリア
+78,フェイト
+79,シャスカ
+80,ゲイル
+81,ユーラス
+82,スヴェン
+83,ミルーハ
+84,イングス
+85,ヒルトン
+86,サイフェス
+87,ゼオルグ
+88,アリナ
+89,エレア
+90,ラフィーネ
+91,トア
+92,コルド
+93,ガイアン
+94,デパス
+95,リュミエール
+96,テオ
+97,メイアル
+98,クラム
+99,カルメ
+100,フラット
+101,レアンダ
+102,オノン
+103,ペギータ
+104,ポルッカ
+105,ジーノ
+106,ラキア
+107,ミリ
+108,リーン
+109,メリンダ
+110,ヴェイド
+111,クノーメ
+112,ゼノン
+113,カッツェ
+114,シーザ
+115,マリアンヌ
+116,シロガネ
+117,ルッカ
+118,ルーニー
+119,ダンテ
+120,ニコラス
+121,クロガネ
+122,ヴァレリア
+123,サムス
+124,キリト
+125,ハティ
+126,スコル
+127,ケイト
+128,アリシア
+129,ライナー
+130,シルヴィア
+131,カトレア
+132,クレール
+133,ジェルトルーデ
+134,テトラ
+135,ジュディ
+136,ラヴィニア
+137,ヒナタ
+138,テレサ
+139,ミユキ
+140,モイラ
+141,アイリス
+142,ハルカナ
+143,ベレニーチェ
+144,フィズ
+145,シェリル
+146,シェリー
+147,フェリス
+148,アルル
+149,ミサナ
+150,フローレンス
+151,スーキー
+152,クローディア
+153,シロテルア
+154,レナ
+155,エレン
+156,ユウギリ
+157,リンゴ
+158,アンズ
+159,カスミ
+160,セリーヌ
+161,ロゼット
+162,アラン
+163,イヴ
+164,ナルミ
+165,アナスタシア
+166,キーラ
+167,モモ
+168,ザクシャーラ
+169,ウェディ
+170,プラスコーヴィヤ
+171,スラスコ
+172,大家 伊織
+173,仕立屋 おぬい
+174,染料屋 得兵衛
+175,髪結 お瀧
+176,魚屋 浜吉
+177,洗濯女 お清
+178,大家の孫 お千花
+179,茶飯屋 留蔵
+180,薬師 真澄
+181,年子 お布由
+182,年子 お奈津
+183,浪人 景近
+184,絵師 雪簾
+185,大工 源次
+186,少年 捨八
+187,妾腹 彦十郎
+188,与力の弟 市之丞
+189,旗本三男 鈴之進
+190,十手持ち 秀平
+191,同心 忠明
+192,丁稚　久松
+193,貸本屋 庄之助
+194,猿回し 久米五郎
+195,作家 柘榴
+196,武術小町 桜
+197,八百屋 お亀
+198,金貸し ますゑ
+199,巫女 貴子
+200,町娘 お佳代
+201,風来坊 卍
+202,火消し 辰馬
+203,住職 浄尊
+204,寺男 与作
+205,女房 杉江
+206,曲芸師 蝶々
+207,夜鷹 みさを
+208,武者修行 鉄心
+209,怪我人 あづさ
+210,後家 藤世
+case 211: return”サガネ”;
+case 212: return”アキヨシ”;
+case 213: return”キリカ”;
+case 214: return”ジロ”;
+case 215: return”ミツル”;
+case 216: return”イル”;
+case 217: return”キング”;
+case 218: return”ココ”;
+case 219: return”トト”;
+case 220: return”チャコ”;
+case 221: return”マキ”;
+case 222: return”ムラタ”;
+case 223: return”キヌ”;
+case 224: return”サトリ”;
+case 225: return”チハヤ”;
+case 226: return”マオ”;
+case 227: return”フクトミ”;
+case 228: return”ユメコ”;
+case 229: return”メイコ”;
+case 230: return”カンザキ”;
+case 231: return”フミノエ”;
+case 232: return”モモ”;
+case 233: return”ソウザブロウ“;
+case 234: return”リョータ”;
+case 235: return”ユキト”;
+case 236: return”コトブキ”;
+case 237: return”イヌカイ”;
+case 238: return”クロエ”;
+case 239: return”レント”;
+case 240: return”ヒロミ”;
+case 241: return”エイジ”;
+case 242: return”アルト”;
+case 243: return”カナメ”;
+case 244: return”グンジ”;
+case 245: return”スナノ”;
+case 246: return”サクラ”;
+case 247: return”カズミ”;
+case 248: return”パルル;
+case 249: return”サイコ”;
+case 250: return”ショコラ”;
+case 251: return”オオサワ”;
+case 252: return”クマガイ”;
+case 253: return”リリナ;
+case 254: return”カツラ”;
+case 255: return”ジョウカン”;
+case 256: return”せんせい”;
+case 257: return”いばぁん”;
+case 258: return”りでぃや”;
+case 259: return”かちゅーしゃ”;
+case 260: return”ゆーりー”;
+case 261: return”きりる”;
+case 262: return”たちあな”;
+case 263: return” ぱーべる”;
+case 264: return”おりが”;
+case 265: return”らび”;
+case 266: return”ふぃぐねりあ”;
+case 267: return”さーしゃ”;
+case 268: return”べるなると”;
+case 269: return”まくしーむ”;
+case 270: return”あれくせい”;
+case 271: return”いらいだ”;
+case 272: return”ろらん”;
+case 273: return”どらがのふ”;
+case 274: return”ありょーる”;
+case 275: return”えれおのーら”;
+case 276: return”にきーた”;
+case 277: return”れーす”;
+case 278: return”みはいる”;
+case 279: return”なたりー”;
+case 280: return”だにーる”;
+case 281: return”ばれりー”;
+case 282: return”くれすと”;
+case 283: return”めーふぃえ”;
+case 284: return”ぷらーみや”;
+case 285: return”うーとら”;
+case 286: return”さんどら”;
+case 287: return”じらんと”;
+case 288: return”もろぞふ”;
+case 289: return”ぐれごりー”;
+case 290: return”そーにゃ”;
+case 291: return”にこらい”;
+case 292: return”しゅてふぁん”;
+case 293: return”どみにか”;
+case 294: return”びくとーる”;
+case 295: return”ふりすちーな”;
+case 296: return”あなすたしあ”;
+case 297: return”りじちょう”;
+case 298: return”えんちょう”;
+case 299: return “世話焼き ディタ”;
+case 300: return “青年 コルン”;
+case 301: return “技術者 ヴェス”;
+case 302: return “お人好し ビュー”;
+case 303: return “機械人形 エンゼ”;
+case 304: return “エース アネスト”;
+case 305: return “探索者 ミスティ”;
+case 306: return “不器用 ザザ”;
+case 307: return “迷子 アヘル”;
+case 308: return “医者 ギムレット”;
+case 309: return “ナース ノリア”;
+case 310: return “自己愛 ソノラン”;
+case 311: return “病弱 キール”;
+case 312: return “通信 マルキ”;
+case 313: return “弱気 ヘレス”;
+case 314: return “内気 ニコライ”;
+case 315: return “上官 アドニス”;
+case 316: return “補佐役 サンシア”;
+case 317: return “暗殺者 カミカゼ”;
+case 318: return “変人 ノチェロ”;
+case 319: return “教官 サングレー”;
+case 320: return “夫人 ラスティ”;
+case 321: return “生意気 ベリニ”;
+case 322: return “研究者 シルビア”;
+case 323: return “装甲 コザック”;
+case 324: return “性別不明 オペラ”;
+case 325: return “秘書 ベル”;
+case 326: return “走り屋 ジャン”;
+case 327: return “マスク アロール”;
+case 328: return “不熱心 コットン”;
+case 329: return “ハッカー ジキル”;
+case 330: return “生存者 スー”;
+case 331: return “部外者 コラーダ”;
+case 332: return “責任者 クリノス”;
+case 333: return “孫娘 リリー”;
+case 334: return “アイドル レディ”;
+case 335: return “見習い ミュー”;
+case 336: return “エリート ライフ”;
+case 337: return “天才少年 ムーン”;
+case 338: return “狙撃手 ビーチ”;
+case 339: return “重装備 リタ”;
+case 340: return “副官 グノ”;
+case 341: return “倉庫番 カルドナ”;
+case 342: return “遊び人 ハルゲル”;
+case 343: return “接続 ディキリア”;
+case 344: return “空洞 ラグーン”;
+case 345: return “喧嘩屋 サンドア”;
+case 346: return “管理者 リドライ”;
+case 347: return “総合案内 キグニ”;
+case 348: return “心理士 リコット”;
+case 349: return “夜警 カルア”;
+case 350: return “流刑 シンギョウ”;
+case 351: return “地光 トルニー”;
+case 352: return “月光 ディーマ”;
+case 353: return “信仰元 アオイ”;
+case 354: return “酸性雨 シードル”;
+case 355: return “箱入り リーン”;
+case 356: return “雌伏 サファイア”;
+case 357: return “早合点 リブレ”;
+case 358: return “異邦人 フラーズ”;
+case 359: return “無鉄砲 バトス”;
+case 360: return “負傷者 ガリアノ”;
+case 361: return “実験体 ルディ”;
+case 362: return “客寄 マイスター”;
+case 363: return “操縦士 カラント”;
+case 364: return “闇取引 イルド”;
+case 365: return “御曹司 アマルラ”;
+case 366: return “華僑 アズ”;
+case 367: return “支配人 ルシアン”;
+case 368: return “保持者 ホッパー”;
+case 369: return “禁科学　シック”;
+case 370: return “偵察 イーラ”;
+case 371: return “遭遇者 トバ”;
+case 372: return “監視員 ミドリ”;
+case 373: return “天の川 ソーダ”;
+case 374: return “麦藁 オリヴァー”;
+case 375: return “学生 デイクル”;
+case 376: return “変人 レノックス”;
+case 377: return “医学生 トレイス”;
+case 378: return “水商売 デラニィ”;
+case 379: return “寝巻 ジェリコ”;
+case 380: return “王女 サフィラ”;
+case 381: return “団長 バークレイ”;
+case 382: return “宿無 ロデリック”;
+case 383: return “掃除人 モンティ”;
+case 384: return “元軍人 リンシィ”;
+case 385: return “用心棒 ダコタ”;
+case 386: return “黒頭巾 マーシャ”;
+case 387: return “囚人 キプリング”;
+case 388: return “料理人 チャズ”;
+case 389: return “探偵見習 トリィ”;
+case 390: return “面薄 タットン”;
+case 391: return “眼鏡 マリンダ”;
+case 392: return “御曹司 ランダル”;
+case 393: return “包帯 ニッキィ”;
+case 394: return “盗賊 レギナルド”;
+case 395: return “怠惰 ミッチェル”;
+case 396: return “詩人 ルシアス”;
+case 397: return “教師 ジョアキム”;
+case 398: return “村娘 カサリナ”;
+case 399: return “堅物 クレア”;
+case 400: return “曲芸師 テッド”;
+case 401: return “ゴロツキ ガルダ”;
+case 402: return “牧童 クゥ”;
+case 403: return “物真似 ピンク”;
+case 404: return “男前少年 トム”;
+case 405: return “露天商 クリフ”;
+case 406: return “酔っ払い アレク”;
+case 407: return “不機嫌 エイミー”;
+case 408: return “嘘つき ジャック”;
+case 409: return “記者 キャサリン”;
+case 410: return “令嬢 ブレンダ”;
+case 411: return “芸人 ピエール”;
+case 412: return “孤児 ショコラ”;
+case 413: return “旅人 ザク”;
+case 414: return “双子兄 エメット”;
+case 415: return “双子弟 ミメット”;
+case 416: return “女学生 サーラ”;
+case 417: return “ボス アンジェラ”;
+case 418: return “老婆 キノ”;
+case 419: return “看板娘 モニカ”;
+case 420: return “優等生 デニース”;
+case 421: return “教徒 カミュ”;
+case 422: return “修道女 ユーリエ”;
+case 423: return “雑貨屋 ノラ”;
+case 424: return “踊り子 バルバラ”;
+case 425: return “双子姉 チェルシ”;
+case 426: return “双子妹 チェリオ”;
+case 427: return “猫仙人 グエン”;
+case 428: return “闇商人 ライザ”;
+case 429: return “赤面症 ベス”;
+case 430: return “剣士 ウォーカー”;
+case 431: return “洗濯屋 メアリ”;
+case 432: return “聖者 マキリス”;
+case 433: return “処刑人 カナビス”;
+case 434: return “悪道 ハッチ”;
+case 435: return “花博士 マーブル”;
+case 436: return “調査員 ピース”;
+case 437: return “医師 バラキン”;
+case 438: return “家庭教師 メリー”;
+case 439: return “浜辺少女 フラン”;
+case 440: return “作家 ヒグラシ”;
+case 441: return “村長 イワン”;
+case 442: return “食道楽 タオ”;
+case 443: return “無法者 ジーマ”;
+case 444: return “魔女見習 タニャ”;
+case 445: return “遊び人 ジョニー”;
+case 446: return “旅行者 バーグ”;

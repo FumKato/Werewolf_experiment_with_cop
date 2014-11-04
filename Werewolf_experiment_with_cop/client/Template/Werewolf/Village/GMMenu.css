@@ -1,0 +1,43 @@
+.GMMenuButton {
+	height: 60px;
+	-webkit-appearance: none;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#startGame {
+	display: none;
+	float: left;
+}
+
+#extendTime {
+	width: 60px;
+	float: left;
+}
+
+#spoilVillage{
+	height: 30px;
+	float: right;
+	display: none;
+}
+
+#ghostChat {
+	width: 60px;
+	float: right;
+}
+
+#audienceChat {
+	width: 60px;
+	float: right;
+}
+
+#readyCheck{
+	height: 30px;
+	display: none;
+	margin-top: 5px;
+	float: left;
+}
+
+#kick {
+	float: left;
+}

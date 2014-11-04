@@ -1,0 +1,80 @@
+.overlay {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	color: #000;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.overlayContents {
+	width: 660px;
+	min-height: 500px;
+	
+	margin-top: 10px;
+	margin-left: 100px;
+	
+	-webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    
+    background-image: url("/images/bg_y01.jpg");
+}
+
+.overlayContentsPadding{
+	width: 660px;
+	height: 30px;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bold;
+	
+	float: left;
+}
+
+.iconList{
+	width: 660px;
+	margin-top: 10px;
+	float: left;
+}
+
+.overlayPlayerList{
+	width: 660px;
+	margin-left: 10px;
+	float: left;
+}
+
+.overlayButtons{
+	width: 660px;
+	height: 100px;
+	margin-top: 10px;
+}
+
+.overlayBackButton{
+	width: 50px;
+	height: 30px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 200px;
+	-webkit-appearance: none;
+}
+
+.overlayEnterButton{
+	width: 100px;
+	height: 50px;
+
+	margin-top: 10px;
+	margin-left: 20px;
+	-webkit-appearance: none;
+}
+
+#loginOverlay{
+	z-index: 2;
+}
+
+#nameChangeOverlay{
+	z-index: 1;
+}
+
+#nameChangeColorForm{
+	float: left;
+}

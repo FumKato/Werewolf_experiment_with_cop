@@ -1,0 +1,65 @@
+<template name="VillageList">
+	<div class="caution">
+		村リストの読み込みには数秒かかります。
+	</div>
+	<div class="villageListTopic">　村民募集中の村</div>
+	<div id="noPrestartVillageMessage">村民募集中の村は、ありません。</div>
+	{{#each getVillages}}
+	    <div class="villageListItem" id={{_id}}>{{> VillageListItem}}</div>
+	{{/each}}
+	<div class="villageListTopic">　ゲーム進行中の村</div>
+	<div id="noStartedVillageMessage">ゲーム進行中の村は、ありません。</div>
+	{{#each getStartedVillages}}
+		<div class="villageListItem" id={{_id}}>{{> VillageListItem}}</div>
+	{{/each}}
+	<div class="villageListTopic">　開催予定</div>
+	<div id="noVillageScheduleMessage">開催予定の村は、ありません。</div>
+	<div class="villageScheduleCreateButton">開催予定を登録する</div>
+	<div class="villageScheduleMessage">10件以上登録されている場合、直近の10件が表示されます。</div>
+	{{#each getSchedules}}
+		<div id="villageScheduleList">
+			<div class="villageScheduleListItem">
+				<div class="villageScheduleDate">
+					{{month}}月{{date}}日 {{hours}}:{{getMinutes minutes}} 頃 村建て予定
+					<input type="button" class="villageScheduleDeleteButton" id={{_id}} value="削除">
+				</div>
+				<div class="villageScheduleListItemLabel">登録者</div>
+				<div class="villageSchedulePlayer">{{name}}◆{{trip}}</div>
+				<div class="villageScheduleListItemLabel">予定配役</div>
+				<div class="villageScheduleRoleset">{{quota}}人 {{roleset}}</div>
+				<div class="villageSchedulePR">
+					<div class="villageSchedulePRLabel">
+						<div class="villageSchedulePRPadding"> </div>
+						<div class="villageSchedulePRLabelBody">備考</div>
+						<div class="villageSchedulePRPadding"> </div>
+					</div>
+					<div class="villageSchedulePRBody">{{{pr}}}</div>
+				</div>
+			</div>
+		</div>
+	{{/each}}
+	<div class="fotterPadding"> </div>
+	<div class="fotter fotterTop">
+		このサイトは、汝は人狼なりや 続わかめてエディション および るる鯖 のルールを基に JavaScriptで作成されたものです。
+		<div>本サイトに問題がございましたら、お手数ですがご連絡をお願い致します。</div>
+	</div>
+	<div class="fotter">meteora.jinro[at]gmail.com</div>
+
+	<div class="fotter poweredBy">Powered by JavaScript + <a href="https://www.meteor.com/" target="_blank">Meteor</a> +
+		<a href="http://nodejs.org/" target="_blank">Node.js</a> + <a href="http://www.mongodb.org/" target="_blank">MongoDB</a> and more</div>
+	<div class="fotter">アイコンを使わせて頂いております</div>
+	<div class="fotter">・<a href="http://jsfun525.gamedb.info/wiki/?%A1%D6%B2%D6%A4%CE%A4%AA%B9%BE%B8%CD%A1%D7%A5%AD%A5%E3%A5%E9%A5%BB%A5%C3%A5%C8" target="_blank">ねこっぷセット</a>: こはく 様</div>
+	<div class="fotter">・<a href="http://jsfun525.gamedb.info/wiki/?%BF%CD%CF%B5%CD%D1%A5%A2%A5%A4%A5%B3%A5%F3%A1%CAazuma%29" target="_blank">azumaセット</a>: azuma 様</div>
+	<div class="fotter">・<a href="http://jsfun525.gamedb.info/wiki/?mtmt%A5%AD%A5%E3%A5%E9%A5%BB%A5%C3%A5%C8" target="_blank">mtmtセット</a>: mtmt 様</div>
+	<div class="fotter">・<a href="http://jsfun525.gamedb.info/wiki/?shirone%A5%AD%A5%E3%A5%E9%A5%BB%A5%C3%A5%C8" target="_blank">shironeセット</a>: shirone 様</div>
+	<div class="fotter">・<a href="http://jsfun525.gamedb.info/wiki/?%A1%D6%B2%D6%A4%CE%A4%AA%B9%BE%B8%CD%A1%D7%A5%AD%A5%E3%A5%E9%A5%BB%A5%C3%A5%C8" target="_blank">花のお江戸セット</a>: こはく 様</div>
+	<div class="fotter">・<a href="http://onecat.tobiiro.jp/">壱番街セット</a>: 壱猫 様</div>
+	<div class="fotter">・<a href="http://asakp2.rosx.net/jinro/jnr_kalinka.html">かりんかセット</a>: かえるぴょこぴょこ/あさくら 様</div>
+	<div class="fotter">・<a href="http://mizu.mameshibori.net/index.html">メトロポリスセット</a>: すむろ水 様</div>
+	<div class="fotter">・<a href="http://jsfun525.gamedb.info/wiki/?%A5%AD%A5%E3%A5%E9%A5%BB%A5%C3%A5%C8%20xx">xxセット</a>: KRNN 様</div>
+	<div class="fotter poweredBy">効果音を使わせて頂いております</div>
+	<div class="fotter"><a href="http://www.kurage-kosho.info/others.html" target="_blank">くらげ工匠</a> 様</div>
+	<div class="fotter"><a href="http://koukaongen.com/kkog2_free/index.html" target="_blank">効果音源(フリー版)</a> 様</div>
+	<div class="fotter"><a href="http://maoudamashii.jokersounds.com/" target="_blank">魔王魂</a> 様</div>
+	<div class="fotterPadding"> </div>
+</template>

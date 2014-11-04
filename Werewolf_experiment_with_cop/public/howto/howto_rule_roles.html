@@ -1,0 +1,340 @@
+<html>
+	<title>汝は人狼なりや？@めておら鯖 説明書〜ルール編:役職と能力〜</title>
+	<head>
+		<link rel="stylesheet" type="text/css" href="howto.css">
+	</head>
+	<body>
+	  <div id="howto">
+		<div id="title">
+			<img src="../images/Logo.png" alt="汝は人狼なりや？" width="600px" height="320px">
+		</div>
+		<div class="line"> </div>
+		<div id="index">
+			<div class="indexItem">ルール編</div>
+			<div class="indexItem">
+				・<a href="howto_rule_top.html">汝は人狼なりやとは</a>
+			</div>
+			<div class="indexItem">
+		  		・<a href="howto_rule_gameflow.html">ゲームの流れ</a>
+		  	</div>
+		  	<div class="indexItem">
+		  		・<a href="howto_rule_judge.html">勝利条件</a>
+		  	</div>
+		  	<div class="indexItem">
+		  		・役職と能力
+		  	</div>
+		  	<div class="indexItem">
+		  		・<a href="howto_rule_prohibition.html">やってはいけないこと</a>
+		  	</div>
+		  	<div class="indexItem">
+		  		・<a href="howto_rule_localrule.html">このサーバーのルール</a>
+		  	</div>
+		  	<div class="indexItem">
+		  		・<a href="howto_rule_qna.html">Q＆A</a>
+		  	</div>
+			<div class="dline"> </div>
+			<div class="indexItem">
+				<a href="howto_player_top.html">プレイヤー編</a>
+			</div>
+			<div class="indexItem">
+				<a href="howto_gm_top.html">GM編(村建てからゲーム管理機能まで)</a>
+			</div>
+		</div>
+		<div class="line"> </div>
+		<div class="topic">
+			<a name="role">役職と能力</a>
+		</div>
+		<div class="contents">
+			<div class="midtopic">
+				村人陣営
+			</div>
+			<div class="rolesTopic">
+				<div class="roleIcon">
+					<img src="../roleIcon/Villager.png">
+				</div>
+				<div class="roleTopicPadding"> </div>
+				<div class="subtopic roleSubTopic">
+					村人
+				</div>
+			</div>
+			<div class="contents">
+				能力は、ありません。
+			</div>
+			<div class="rolesTopic">
+				<div class="roleIcon">
+					<img src="../roleIcon/Seer.png">
+				</div>
+				<div class="roleTopicPadding"> </div>
+				<div class="subtopic roleSubTopic">
+					占い師
+				</div>
+			</div>
+			<div class="contents">
+				<div>
+					明け方の度に、自分以外の生存者1人を占って「村人」か「人狼」かを知る事ができます。
+				</div>
+				<div class="image">
+					<img src="../howto_images/seerAction.png">
+				</div>
+				<div>
+					妖狐を占った場合、呪い殺すことができます。
+				</div>
+				<div>
+					(占い結果は「村人」と出て、翌日の昼に人狼の襲撃結果と区別できない形で判明します。)
+				</div> 
+				<div class="image">
+					<img src="../howto_images/curseFox.png">
+				</div>
+			</div>
+			<div class="rolesTopic">
+				<div class="roleIcon">
+					<img src="../roleIcon/Medium.png">
+				</div>
+				<div class="roleTopicPadding"> </div>
+				<div class="subtopic roleSubTopic">
+					霊能者
+				</div>
+			</div>
+			<div class="contents">
+				<div>
+					その日に処刑されたプレイヤーが「村人」か「人狼」かを知る事ができます。
+				</div>
+				<div>
+					この能力は<b>夜に</b>自動的に実行されます。
+				</div>
+				<div class="image">
+					<img src="../howto_images/mediumAction.png">
+				</div>
+			</div>
+			<div class="rolesTopic">
+				<div class="roleIcon">
+					<img src="../roleIcon/Hunter.png">
+				</div>
+				<div class="roleTopicPadding"> </div>
+				<div class="subtopic roleSubTopic">
+					狩人
+				</div>
+			</div>
+			<div class="contents">
+				<div>
+					明け方の度に、自分以外の生存者1人を護衛することができます。
+				</div>
+				<div>
+					護衛されたプレイヤーは人狼の襲撃で死亡しません。妖狐を護衛した場合、占い師による殺害は防ぐことができません。
+				</div>
+				<div class="image">
+					<img src="../howto_images/hunterAction.png">
+				</div>
+			</div>
+			<div class="rolesTopic">
+				<div class="roleIcon">
+					<img src="../roleIcon/Mason.png">
+				</div>
+				<div class="roleTopicPadding"> </div>
+				<div class="subtopic roleSubTopic">
+					共有者
+				</div>
+			</div>
+			<div class="contents">
+				<div>
+					自分以外にもう1人いる、他の共有者が誰であるかを知る事ができます。
+				</div>
+				<div>
+					2人とも生存している場合、夜に共有者同士で会話することができます。
+				</div>
+				<div class="image">
+					<img src="../howto_images/masonAction.png">
+				</div>
+			</div>
+			<div class="rolesTopic">
+				<div class="roleIcon">
+					<img src="../roleIcon/Cat.png">
+				</div>
+				<div class="roleTopicPadding"> </div>
+				<div class="subtopic roleSubTopic">
+					猫又
+				</div>
+			</div>
+			<div class="contents">
+				<div class="paragraph">
+					処刑された場合、全生存者の中からランダムに1人を道連れにします。
+					この場合、対象が猫又の能力で死亡した事が分かる形で公開されます。
+				</div>
+				<div class="image">
+					<img src="../howto_images/catVoteKill.png">
+				</div>
+				<div class="paragraph">
+					人狼に殺害された場合、生存している人狼をランダムに1人道連れにします。
+					この場合、対象は襲撃結果と区別できない形で公開されます。
+				</div>
+				<div class="image">
+					<img src="../howto_images/catWolfKill.png">
+				</div>
+			</div>
+			<div class="rolesTopic">
+				<div class="roleIcon">
+					<img src="../roleIcon/Girl.png">
+				</div>
+				<div class="roleTopicPadding"> </div>
+				<div class="subtopic roleSubTopic">
+					少女
+				</div>
+			</div>
+			<div class="contents">
+				<div class="paragraph">
+					<div>
+						<b>2日目の明け方以降</b>、毎晩一人を「村人」「人狼」のどちらであるかを調べることができます。
+						<b>この能力は、明け方の残り時間が半分以上残っている場合のみ実行できます。</b>
+					</div>
+					<div>少女の能力実行が可能な間は、残り時間が赤色で表示されます。</div>
+				</div>
+				<div class="image">
+					<img src="../howto_images/redTimerDawn.png">
+				</div>
+				<div class="paragraph">
+					対象が人狼であった場合、<b>相手にも、自身が少女であることが知られてしまいます。</b>
+				</div>
+				<div class="image">
+					<img src="../howto_images/girlAction.png">
+				</div>
+			</div>
+			<div class="dline"> </div>
+			<div class="midtopic">
+				人狼陣営
+			</div>
+			<div class="rolesTopic">
+				<div class="roleIcon">
+					<img src="../roleIcon/Werewolf.png">
+				</div>
+				<div class="roleTopicPadding"> </div>
+				<div class="subtopic roleSubTopic">
+					人狼
+				</div>
+			</div>
+			<div class="contents">
+				<div class="paragraph">
+					自分以外の人狼が誰であるかを知る事ができます。
+				</div>
+				<div class="paragraph">
+					<div>
+						明け方に、プレイヤー1人を指定して襲撃(殺害)することができます。
+						<b>誰を襲撃するか、という情報は人狼同士で共有できません。</b>
+					</div>
+					<div>
+						ただし、襲撃先を決定する度に、それを示すシステムメッセージが流れます。
+					</div>
+					<div class="image">
+						<img src="../howto_images/wolfAction.png">
+					</div>
+					<div>
+						能力時間非固定の村(デフォルト)では、明け方の時間内ならば襲撃先を変更できます。
+						この場合、<b>全人狼の中で最後に指定された対象を襲撃します。</b>
+					</div>
+				</div>
+				<div class="paragraph">
+					夜に、生存している人狼同士で会話(遠吠え)をすることができます。
+					遠吠えでは、人狼以外のプレイヤーには発言者の名前・発言内容は見えず
+					「アォォーーン」と表示されます。
+				</div>
+				<div class="image">
+					<img src="../howto_images/wolfcry.png">
+				</div>
+			</div>
+			<div class="rolesTopic">
+				<div class="roleIcon">
+					<img src="../roleIcon/Fanatic.png">
+				</div>
+				<div class="roleTopicPadding"> </div>
+				<div class="subtopic roleSubTopic">
+					狂人
+				</div>
+			</div>
+			<div class="contents">
+				<div class="paragraph">
+					<div>占い師・霊能者・少女の能力結果では「村人」となりますが、人狼陣営です。</div>
+					誰が人狼であるかを知る事はできません。また、人狼は誰が狂人であるかを知る事はできません。
+				</div>
+				<div class="paragraph">
+					<div>
+						<b>勝利条件の人数計算では、村人としてカウントされます。</b>
+					</div>
+					<div>
+						例: 生存者が5人いて、内訳が村人・村人・狂人・人狼・人狼　である場合、
+						<div>人狼の勝利条件は満たされていません。</div>
+					</div>
+				</div>
+				<div class="image">
+					<img src="../howto_images/fanaticCount.png">
+				</div>
+			</div>
+			<div class="rolesTopic">
+				<div class="roleIcon">
+					<img src="../roleIcon/Wizard.png">
+				</div>
+				<div class="roleTopicPadding"> </div>
+				<div class="subtopic roleSubTopic">
+					<a name="wizard">妖術師</a>
+				</div>
+			</div>
+			<div class="contents">
+				<div class="paragraph">
+					<div>オプションで狂人の代わりに登場する役職です。</div>
+					<div>占い師・霊能者・少女の能力結果では「村人」となりますが、人狼陣営です。</div>
+					<div>誰が人狼であるかを知る事はできません。また、人狼は誰が妖術師であるかを知る事はできません。</div>
+				</div>
+				<div class="paragraph">
+					<div>
+						明け方に、毎晩1人の<b>役職が「村人」であるか</b>を調べることができます。
+					</div>
+				</div>
+				<div class="image">
+					<img src="../howto_images/wizardAction.png">
+				</div>
+				<div class="paragraph">
+					狂人と同様、<b>勝利条件の人数計算では、村人としてカウントされます。</b>
+				</div>
+			</div>
+			<div class="dline"> </div>
+			</div>
+			<div class="midtopic">
+				妖狐陣営
+			</div>
+			<div class="rolesTopic">
+				<div class="roleIcon">
+					<img src="../roleIcon/Fox.png">
+				</div>
+				<div class="roleTopicPadding"> </div>
+				<div class="subtopic roleSubTopic">
+					妖狐
+				</div>
+			</div>
+			<div class="contents">
+				<div class="paragraph">
+					<div>人狼に襲撃されても死亡しませんが、占い師に占われると死亡します(少女・妖術師の能力対象になった場合は死亡しません)。</div>
+					<div>占い師・霊能者の能力結果では「村人」と表示されます。</div>
+				</div>
+				<div class="paragraph">
+					<div><b>勝利条件の人数計算では、村人・人狼陣営のどちらとしてもカウントされません。</b></div>
+					<div>
+						<div>例: 生存者が5人いて、内訳が村人・村人・妖狐・人狼・人狼　である場合、</div>
+						<div><b>村人陣営2人、人狼陣営2人</b>と計算するため、</div>
+						人狼陣営の勝利条件を満たしています。そのため、妖狐の勝利となります。
+					</div>
+				</div>
+				<div class="image">
+					<img src="../howto_images/foxCount.png">
+				</div>
+			</div>
+		
+			<div class="line"> </div>
+			<div class="contents">
+				<div class="prev">
+					<a href="howto_rule_judge.html">&lt;&lt; 勝利条件</a>
+				</div>
+				<div class="next">
+					<a href="howto_rule_prohibition.html">やってはいけないこと &gt;&gt;</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,224 @@
+div#villageBackButton{
+	width: 30px;
+	height: 50px;
+	font-size: 13px;
+	float: left;
+	display:none;
+}
+
+
+div#villageBaseInformation {
+	position: relative;
+	width: 500px;
+	height: 50px;
+	color: #FFFFFF;
+	float: left;
+}
+
+div#villageNumber {
+	width: 500px;
+	height: 15px;
+	font-size: 10px;
+	float: left;
+	
+	-webkit-border-radius: 0% 7px 7px 0% / 0% 7px 7px 0%;
+    -moz-border-radius: 0% 7px 7px 0% / 0% 7px 7px 0%;
+    border-radius: 0% 7px 7px 0% / 0% 7px 7px 0%;
+	
+	box-shadow: 1px 1px 2px #000;
+	-moz-box-shadow: 1px 1px 1px #000;
+	-webkit-box-shadow: 1px 1px 1px #000;
+	
+	border: 1px solid #000;
+	border-bottom: none;
+	background-image: url("/images/head004_06.gif");
+}
+
+div#villageName {
+	width: 500px;
+	height: 30px;
+	float: left;
+	
+	-webkit-border-radius: 0% 15px 15px 0% / 0% 15px 15px 0%;
+    -moz-border-radius: 0% 15px 15px 0% / 0% 15px 15px 0%;
+    border-radius: 0% 15px 15px 0% / 0% 15px 15px 0%;
+	
+	box-shadow: 2px 2px 2px #777;
+	-moz-box-shadow: 2px 2px 2px #777;
+	-webkit-box-shadow: 2px 2px 2px #777;
+	
+	background-image: url("/images/head004_06.gif");
+	border: 1px solid #000;
+}
+
+span.villageNameBody {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+div#villageOptionInformation {
+	display: none;
+	width: 300px;
+	
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    padding: 5px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;  
+    border-radius: 8px;
+    border: 1px solid #000;
+	
+	color: #000;
+	background-image: url("/images/bg_y01.jpg");
+}
+
+div#rolesetBaseInformation{
+	position: relative;
+	width: 135px;
+	height: 50px;
+	margin-left: 10px;
+	float: left;
+	
+	-webkit-border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    border-radius: 7px 7px 7px 7px;
+
+    box-shadow: 2px 2px 2px #777;
+	-moz-box-shadow: 2px 2px 2px #777;
+	-webkit-box-shadow: 2px 2px 2px #777;
+	
+	color: #FFF;
+	background-image: url("/images/btn055_05.gif");
+	border:solid 1px #000;
+}
+
+div#roleset {
+	width: 135px;
+	height: 20px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	float: left;
+	
+	-webkit-border-radius: 7px 7px 0px 0px;
+    -moz-border-radius: 7px 7px 0px 0px;
+    border-radius: 7px 7px 0px 0px;
+	
+	border: none;
+}
+
+div#participantsNumber {
+	width: 135px;
+	height: 28px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	float: left;
+	
+	-webkit-border-radius: 0px 0px 7px 7px;
+    -moz-border-radius: 0px 0px 7px 7px;
+    border-radius: 0px 0px 7px 7px;
+}
+
+div#rolesetOptionInformation {
+	display: none;
+	width: 200px;
+	
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    padding: 5px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;  
+    border-radius: 8px;
+	border: 1px solid #000;
+	background-image: url("/images/btn055_05.gif");
+}
+
+div#timeInformation {
+	width: 260px;
+	height: 50px;
+	text-align:center;
+	margin-left: 5px;
+	
+	-webkit-border-radius: 8px;
+    -moz-border-radius: 8px;  
+    border-radius: 8px;
+	
+	box-shadow: 2px 2px 2px #777;
+	-moz-box-shadow: 2px 2px 2px #777;
+	-webkit-box-shadow: 2px 2px 2px #777;
+	
+	color: #000;
+	border: solid 1px #000;
+	background-image: url("/images/btn055_05.gif");
+	float: left;
+}
+
+div#day {
+	width: 100px;
+	height: 50px;
+	float: left;
+}
+
+span.day {
+	font-weight: bold;
+	font-size: 40px;
+	color: #000080;
+}
+
+div#phase {
+	width: 150px;
+	height: 50px;
+	font-size: 35px;
+	float: left;
+}
+
+div#helpWindowSwitch{
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+div#helpLabel{
+	width: 40px;
+	height: 23px;
+	margin-left: 5px;
+	text-align: center;
+	float: left;
+}
+
+div#helpWindowState{
+	width: 35px;
+	height: 25px;
+	margin-left: 10px;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+	
+	border: solid 1px gray;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+div.helpWindowOn{
+	background-color: #000055;
+	color: #FFF;
+}
+
+.sun {
+	background-image: url("/images/sun48.png");
+	background-repeat: no-repeat;
+}
+
+.moon {
+	background-image: url("/images/cmoon48.png");
+	background-repeat: no-repeat;
+}
+
+.star {
+	background-image: url("/images/star48.png");
+	background-repeat: no-repeat;
+}

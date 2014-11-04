@@ -1,0 +1,158 @@
+<html>
+	<title>汝は人狼なりや？@めておら鯖 説明書〜ルール編:ゲームの流れ〜</title>
+	<head>
+		<link rel="stylesheet" type="text/css" href="howto.css">
+	</head>
+	<body>
+	  <div id="howto">
+		<div id="title">
+			<img src="../images/Logo.png" alt="汝は人狼なりや？" width="600px" height="320px">
+		</div>
+		<div class="line"> </div>
+		<div id="index">
+			<div class="indexItem">ルール編</div>
+			<div class="indexItem">
+				・<a href="howto_rule_top.html">汝は人狼なりやとは</a>
+			</div>
+			<div class="indexItem">
+		  		・ゲームの流れ
+		  	</div>
+		  	<div class="indexItem">
+		  		・<a href="howto_rule_judge.html">勝利条件</a>
+		  	</div>
+		  	<div class="indexItem">
+		  		・<a href="howto_rule_roles.html">役職と能力</a>
+		  	</div>
+		  	<div class="indexItem">
+		  		・<a href="howto_rule_prohibition.html">やってはいけないこと</a>
+		  	</div>
+		  	<div class="indexItem">
+		  		・<a href="howto_rule_localrule.html">このサーバーのルール</a>
+		  	</div>
+		  	<div class="indexItem">
+		  		・<a href="howto_rule_qna.html">Q＆A</a>
+		  	</div>
+			<div class="dline"> </div>
+			<div class="indexItem">
+				<a href="howto_player_top.html">プレイヤー編</a>
+			</div>
+			<div class="indexItem">
+				<a href="howto_gm_top.html">GM編(村建てからゲーム管理機能まで)</a>
+			</div>
+		</div>
+		<div class="line"> </div>
+		<div class="topic">
+			<a name="gameflow">ゲームの流れ</a>
+		</div>
+		<div class="contents">
+			<div class="paragraph">
+				このゲームは <b>昼　夕方　夜　明け方</b>の4つのフェーズで構成されていて、一定時間ごとにフェーズが切り替わることでゲームが進みます。
+				フェーズは <b>1日目 夜</b> から始まり、<b>1日目 明け方→2日目 昼→2日目 夕方→2日目 夜→...</b>と続きます。
+			</div>
+			<div class="paragraph">
+				フェーズ毎に各プレイヤーが可能な行動は異なります。
+			</div>
+			<div class="image">
+				<img src="../howto_images/phaseTransfer.png">
+			</div>
+			<div class="dline"> </div>
+			<div class="subtopic">
+				昼
+			</div>
+			<div class="contents">
+				<div class="paragraph">
+					プレイヤー同士で議論をて、誰が人狼陣営であるかを推理します。
+				</div>
+				<div class="paragraph">
+					昼の開始時に、前の日の夜〜明け方で人狼に殺害されたプレイヤーが判明します。
+					殺害されたプレイヤーはゲームから脱落し、決着がつくまで生存者と会話することはできません。
+					(死亡者同士で会話(霊話)することはできます)
+				</div>
+				<div class="image">
+					<img src="../howto_images/daytimeFlow.png">
+				</div>
+			</div>
+			<div class="dline"> </div>
+			<div class="subtopic">
+				夕方
+			</div>
+			<div class="contents">
+				<div class="paragraph">
+					多数決投票によって処刑するプレイヤーを決めます。
+				</div>
+				<div class="paragraph">
+					<div>全生存者は、処刑したいプレイヤー1人に対して投票をします。</div>
+					<div>投票の結果、最も多くの得票を得たプレイヤーは処刑されて、死亡者となります。</div>
+					<div>最多得票のプレイヤーが2人以上いる場合、投票をやり直します(再投票)。</div>
+					<div><b>5回連続で再投票となった場合、引き分けとなります。(ゲーム終了)</b></div>
+				</div>
+				<div class="paragraph">
+					<div>
+						<span class="enphasize">
+							時間内に投票を行わなかった生存者は、ペナルティとして突然死します。時間を見ていなくてうっかり、ということがないように注意してください。
+						</span>
+					</div>
+					<div>
+						処刑されたプレイヤーの役職は霊能者以外の生存者には公表されません。
+					</div>
+				</div>
+				<div class="image">
+					<img src="../howto_images/aftenoonFlow.png">
+				</div>
+			</div>
+			<div class="dline"> </div>
+			<div class="subtopic">
+				夜
+			</div>
+			<div class="contents">
+				<div class="paragraph">
+					人狼は作戦会議を、村人はそれぞれ考えをまとめます。
+				</div>
+				<div class="paragraph">
+					自分の発言が、他の生存者には見えなくなります。ただし、
+					<b>人狼と共有者は、それぞれ人狼同士、共有者同士で会話をすることができます。</b>
+					人狼はこの時間に話し合って、誰を襲撃(殺害)するかを決めます。
+					(実際に襲撃するのは明け方です)
+				</div>
+				<div class="image">
+					<img src="../howto_images/nightFlow.png">
+				</div>
+			</div>
+			<div class="dline"> </div>
+			<div class="subtopic">
+				明け方
+			</div>
+			<div class="contents">
+				<div class="paragraph">
+					人狼を含む特殊能力を持った役職が、能力を実行します。
+				</div>
+				<div class="paragraph">
+					人狼同士・共有者同士であっても、自分の発言は他の生存者には見えません。
+				</div>
+				<div class="paragraph">
+					人狼は、生存者1人を襲撃します。襲撃の結果は、次の日の昼開始時に全プレイヤーへ公開されます。
+					<span class="enphasize">
+						人狼は、初日以外で時間内に襲撃を実行しなかった場合、ペナルティとして1人死亡します。発生しないように注意してください。
+					</span>
+				</div>
+				<div class="paragraph">
+					特殊能力を持った他の役職(占い師、狩人、少女、妖術師)も、能力を実行することができます(狩人、少女は<b>2日目 明け方</b>から能力を実行することができます)。
+				</div>
+				<div class="image">
+					<img src="../howto_images/dawnFlow.png">
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="line"> </div>
+		<div class="contents">
+			<div class="prev">
+				<a href="howto_rule_top.html"> &lt;&lt; 汝は人狼なりやとは</a>
+			</div>
+			<div class="next">
+				<a href="howto_rule_judge.html">勝利条件 &gt;&gt;</a>
+			</div>
+		</div>
+      </div>
+	</body>
+</html>

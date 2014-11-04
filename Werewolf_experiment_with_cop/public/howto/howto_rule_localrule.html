@@ -1,0 +1,132 @@
+<html>
+	<title>汝は人狼なりや？@めておら鯖 説明書〜ルール編:このサーバーのルール〜</title>
+	<head>
+		<link rel="stylesheet" type="text/css" href="howto.css">
+	</head>
+	<body>
+	  <div id="howto">
+		<div id="title">
+			<img src="../images/Logo.png" alt="汝は人狼なりや？" width="600px" height="320px">
+		</div>
+		<div class="line"> </div>
+		<div id="index">
+			<div class="indexItem">ルール編</div>
+			<div class="indexItem">
+				・<a href="howto_rule_top.html">汝は人狼なりやとは</a>
+			</div>
+			<div class="indexItem">
+		  		・<a href="howto_rule_gameflow.html">ゲームの流れ</a>
+		  	</div>
+		  	<div class="indexItem">
+		  		・<a href="howto_rule_judge.html">勝利条件</a>
+		  	</div>
+		  	<div class="indexItem">
+		  		・<a href="howto_rule_roles.html">役職と能力</a>
+		  	</div>
+		  	<div class="indexItem">
+		  		・<a href="howto_rule_prohibition.html">やってはいけないこと</a>
+		  	</div>
+		  	<div class="indexItem">
+		  		・このサーバーのルール
+		  	</div>
+		  	<div class="indexItem">
+		  		・<a href="howto_rule_qna.html">Q＆A</a>
+		  	</div>
+			<div class="dline"> </div>
+			<div class="indexItem">
+				<a href="howto_player_top.html">プレイヤー編</a>
+			</div>
+			<div class="indexItem">
+				<a href="howto_gm_top.html">GM編(村建てからゲーム管理機能まで)</a>
+			</div>
+		</div>
+		<div class="line"> </div>
+		<div class="topic">
+			<a name="localrule">このサーバーのルール</a>
+		</div>
+		<div class="contents">
+			このサーバーの細かなルールを紹介します。
+			<div class="dline"> </div>
+			<div class="subtopic">
+				時間について
+			</div>
+			<div class="contents">
+				<div>夕方・明け方は<b>時間固定制</b>になっています。(どちらもオプションで解除可能)</div>
+				<div>時間固定制では、全員が投票・能力実行を終えても、残り時間が0秒にならない限り次のフェーズに移りません。</div>
+				<div>夕方の時間固定を解除した場合、全員の投票が終わった時点で、残り時間に関係なく夜になります。</div>
+				<div>明け方の時間固定を解除した場合、<b>人狼の襲撃は明け方の時間が半分以上経過すると可能になります。(占い師・狩人は明け方であればいつでも可能です)</b></div>
+				<div>人狼の襲撃が実行できない間、残り時間は赤色で表示されます</div>
+				<div class="image">
+					<img src="../howto_images/redTimerDawn.png">
+				</div>
+				<div><b>人狼の襲撃が実行されると、残り時間に関係なく昼になります。</b></div>
+			</div>
+			<div class="dline"> </div>
+			<div class="subtopic">
+				投票について
+			</div>
+			<div class="contents">
+				<div>
+					投票先は<b>時間内ならば何度でも変更可能</b>です。
+				</div>
+				<div>
+					<span class="enphasize">時間内に投票をしなかったプレイヤーは突然死します。</span>
+				</div>
+				<div>
+					<b>再投票となった場合、投票状態はリセットされます</b>。再度投票先を決定してください。
+				</div>
+				<div>
+					未投票による突然死があった場合、<b>投票済みのプレイヤーの投票先は公開されますが、再投票になります</b>。
+				</div>
+			</div>
+			<div class="dline"> </div>
+			<div class="subtopic">
+				明け方について
+			</div>
+			<div class="contents">
+				<div>
+					人狼の襲撃先・狩人の護衛先は、<b>時間内ならば何度でも変更可能</b>です。
+				</div>
+				<div>
+					占い師・狩人は、<b>時間内に能力を実行しなくても突然死はありません</b>。しかし、村人陣営は非常に不利になってしまうでしょう。
+				</div>
+			</div>
+			<div class="dline"> </div>
+			<div class="subtopic">
+				襲撃について
+			</div>
+			<div class="contents">
+				<div class="paragraph">
+					<div>襲撃先指定は、生存している人狼であれば誰でも可能です。<b>人狼全員の中で、最後に指定された襲撃先が実行対象となります。</b></div>
+					<div>襲撃先を指定する度にシステムメッセージがログに流れます。(これは全プレイヤーに見えます)</div>
+				</div>
+				<div class="image">
+					<img src="../howto_images/wolfAction.png">
+				</div>
+				<div class="paragraph">
+					<span class="enphasize">
+						人狼は1日目以外で、時間内に襲撃先を1度も指定しなかった場合、ペナルティとしてランダムに1人死亡します。
+					</span>
+					死亡の発覚は翌日の昼開始時で、襲撃結果と区別できいない形で公開されます。
+				</div>
+				<div class="paragraph">
+					1日目は、<b>襲撃先を指定しなくても自動で「初日犠牲者」を襲撃します</b>。また、1日目の襲撃先は必ず「初日犠牲者」となります。
+				</div>
+				<div class="image">
+					<img src="../howto_images/firstKill.png">
+				</div>
+				※初日犠牲者: 初日に襲撃されたプレイヤーが、ゲームにほとんど参加できずに脱落してしまうという状況を防ぐためにシステムが用意する、ダミーのプレイヤー。
+			</div>
+		</div>
+		<div class="line"> </div>
+		<div class="contents">
+			<div class="prev">
+				<a href="howto_rule_prohibition.html">&lt;&lt; やってはいけないこと</a>
+			</div>
+			<div class="next">
+				<a href="howto_rule_qna.html">Q＆A &gt;&gt;</a>
+			</div>
+		</div>
+      </div>
+	</body>
+</html>

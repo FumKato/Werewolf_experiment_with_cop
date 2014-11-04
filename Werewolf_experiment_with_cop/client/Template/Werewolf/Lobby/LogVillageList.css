@@ -1,0 +1,111 @@
+.logVillageListSearch{
+	margin-top: 40px;
+	width: 315px;
+	height: 40px;
+	float: left;
+}
+
+.logVillageListSearchLabel{
+	min-width: 60px;
+	float: left;
+}
+
+.logVillageListSearchForm{
+	width: 80px;
+	float: left;
+}
+
+.logVillageListSearchButton{
+	min-width: 60px;
+	float: left;
+}
+
+#tripSearchResult{
+	width: 630px;
+	height: 20px;
+	float: left;
+}
+
+#logVillageListLoading{
+	width: 630px;
+	height: 200px;
+	float: left;
+	text-align: center;
+	display: none;
+}
+
+#logVillageListTable{
+	border: solid 1px #000077;
+	table-layout: fixed;
+	border-collapse: separate;
+}
+
+.logVillageListTable{
+	float: left;
+	width: 660px;
+	display: none;
+}
+
+#logVillageListHead{
+	background-color: #AAAAFF;
+}
+
+.logVillageListHead{
+	border: solid 1px #0000FF;
+}
+
+.logVillageNumber{
+	width: 50px;
+}
+
+.logVillageName{
+	width: 440px;
+}
+
+.logVillageQuota{
+	width: 70px;
+}
+
+.logVillageRoleSet{
+	width: 80px;
+}
+
+#logVillageListControl{
+	margin-top: 10px;
+	width: 630px;
+	height: 20px;
+	float: left;
+}
+
+.logVillageListForward{
+	width: 100px;
+	height: 20px;
+	float: left;
+	text-align: left;
+	color: #0000FF;
+	cursor: pointer;
+}
+
+.logVillageListBack{
+	width: 100px;
+	height: 20px;
+	margin-left: 160px;
+	float: left;
+	text-align: center;
+	color: #0000FF;
+	cursor: pointer;
+}
+
+
+.logVillageListBackward{
+	width: 100px;
+	height: 20px;
+	float: right;
+	text-align: right;
+	color: #0000FF;
+	cursor: pointer;
+}
+
+.logVillageListControlItemMouseovered{
+	background-color: #AAAAFF
+}

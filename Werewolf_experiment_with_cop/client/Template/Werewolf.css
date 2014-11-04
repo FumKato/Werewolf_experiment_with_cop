@@ -1,0 +1,213 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック', Arial, sans-serif;
+}
+
+div#werewolf{
+	
+}
+
+div#lobby{
+	width: 1000px;
+}
+
+div#logVillage{
+	display:none;
+	width: 1000px;
+}
+
+div#village{
+	display:none;
+	width: 1000px;	
+}
+
+div#overlays{
+	
+}
+
+a.rolesetName:link{
+	color: #FFF;
+}
+
+a.rolesetName:visited{
+	color: #FFF;
+}
+
+.redIcon {
+	border-left: 5px solid #FF0000;
+}
+
+.redBorder {
+	border-bottom: 2px solid #FF0000;
+}
+
+.greenIcon {
+	border-left: 5px solid #008000;
+}
+
+.greenBorder {
+	border-bottom: 2px solid #008000;
+}
+
+.blueIcon {
+	border-left: 5px solid #0000FF;
+}
+
+.blueBorder{
+	border-bottom: 2px solid #0000FF;
+}
+
+.pinkIcon{
+	border-left: 5px solid #FF69B4;
+}
+
+.pinkBorder{
+	border-bottom: 2px solid #FF69B4;
+}
+
+.yellowIcon{
+	border-left: 5px solid #FFFF00;
+}
+
+.yellowBorder{
+	border-bottom: 2px solid #FFFF00;
+}
+
+.navyIcon{
+	border-left: 5px solid #000080;
+}
+
+.navyBorder{
+	border-bottom: 2px solid #000080;
+}
+
+.orangeIcon{
+	border-left: 5px solid #FFA500;
+}
+
+.orangeBorder{
+	border-bottom: 2px solid #FFA500;
+}
+
+.crimsonIcon{
+	border-left: 5px solid #DC143C;
+}
+
+.crimsonBorder{
+	border-bottom: 2px solid #DC143C;
+}
+
+.greenyellowIcon{
+	border-left: 5px solid #7FFF00;
+}
+
+.greenyellowBorder{
+	border-bottom: 2px solid #7FFF00;
+}
+
+.brownIcon{
+	border-left: 5px solid #8B4513;
+}
+
+.brownBorder{
+	border-bottom: 2px solid #8B4513;
+}
+
+.aquaIcon{
+	border-left: 5px solid #00FFFF;
+}
+
+.aquaBorder{
+	border-bottom: 2px solid #00FFFF;
+}
+
+.purpleIcon{
+	border-left: 5px solid #800080;
+}
+
+.purpleBorder{
+	border-bottom: 2px solid #800080;
+}
+
+.blackIcon{
+	border-left: 5px solid #000000;
+}
+
+.blackBorder{
+	border-bottom: 2px solid #000000;
+}
+
+.silverIcon{
+	border-left: 5px solid #C0C0C0;
+}
+
+.silverBorder{
+	border-bottom: 2px solid #C0C0C0;
+}
+
+.darkgreenIcon{
+	border-left: 5px solid #556B2F;
+}
+
+.darkgreenBorder{
+	border-bottom: 2px solid #556B2F;
+}
+
+.royalblueIcon{
+	border-left: 5px solid #4169E1;
+}
+
+.royalblueBorder{
+	border-bottom: 2px solid #4169E1;
+}
+
+.bluegreenIcon{
+	border-left: 5px solid#008080;
+}
+
+.bluegreenBorder{
+	border-bottom: 2px solid #008080;
+}
+
+.indigoIcon{
+	border-left: 5px solid #4B0082;
+}
+
+.indigoBorder{
+	border-bottom: 2px solid #4B0082;
+}
+
+.bluevioletIcon{
+	border-left: 5px solid #8A2BE2;
+}
+
+.bluevioletBorder{
+	border-bottom: 2px solid #8A2BE2;
+}
+
+.darkredIcon{
+	border-left: 5px solid #8B0000;
+}
+
+.darkredBorder{
+	border-bottom: 2px solid #8B0000;
+}
+
+.coralIcon{
+	border-left: 5px solid #FF7F50;
+}
+
+.coralBorder{
+	border-bottom: 2px solid #FF7F50;
+}
+
+.lightpinkIcon{
+	border-left: 5px solid #FFB6C1;
+}
+
+.lightpinkBorder{
+	border-bottom: 2px solid #FFB6C1;
+}
+
+.noneIcon{
+	border-left: 5px solid gray;
+}

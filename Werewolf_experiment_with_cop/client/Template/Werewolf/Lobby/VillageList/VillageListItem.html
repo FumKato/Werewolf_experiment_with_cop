@@ -1,0 +1,9 @@
+<template name="VillageListItem">
+	<div class="villageListItemHeader">{{number}}番地</div>
+	<div class="villageListItemName">{{settings.villageName}}村</div>
+	<div class="villageListItemPhase">{{getVillagePhase _id}}</div>
+	<div class="villageListItemPR">{{settings.villagePR}}</div>
+	<div class="villageListItemOptions">{{getVillageOptions settings}}</div>
+	<div class="villageListItemRoleset">{{getRoleset settings}}</div>
+	<div class="villageListItemParticipants">{{{getVillageParticipants _id settings gatheringGM}}}</div>
+</template>

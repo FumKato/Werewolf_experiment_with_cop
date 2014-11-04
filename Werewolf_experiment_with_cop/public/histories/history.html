@@ -1,0 +1,367 @@
+<html>
+	<title>汝は人狼なりや？@めておら鯖 〜更新履歴〜</title>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../howto/howto.css">
+		<link rel="stylesheet" type="text/css" href="histories.css">
+	</head>
+	<body>
+	  <div id="howto">
+		<div id="title">
+			<img src="../images/Logo.png" alt="汝は人狼なりや？" width="600px" height="320px">
+		</div>
+		<div class="line"> </div>
+		<div class="subtopic">
+			2014-10-5
+		</div>
+		<div class="informationTopic">以下の不具合への対策を行いました</div>
+		<div class="informationContent">・<b>夕方の残り時間が0秒になる直前に「時間延長」を行うと、投票結果が正しく処理されなくなる</b></div>
+		<div class="informationContent">　- 本現象の発生を防ぐため、残り時間が4秒以下の場合、「時間延長」の操作を受け付けないように変更しました</div>
+		<div class="informationTopic">以下の変更を行いました</div>
+		<div class="informationContent">・<b>残り時間が4秒以下の場合、「時間延長」の操作を受け付けなくしました</b></div>
+		<div class="informationContent">　- 前述の不具合への対策として、本条件を追加しました</div>
+		<div class="informationContent">・<b>システムメッセージを追加しました</b></div>
+		<div class="informationContent">　- 役職能力・投票・時間延長に関して、実行可能な時間に関するメッセージがヘルプウィンドウに表示されます</div>
+		<div class="informationContent"> </div>
+		<div class="informationContent"><b>不具合の発生により該当村の方々にご迷惑をおかけしましたこと、お詫び申し上げます</b></div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-9-21
+		</div>
+		<div class="informationTopic">以下の変更を行いました</div>
+		<div class="informationContent"><b>・ゲーム参加者の村建て制限が、参加中の村が事件終了になった時点で解除されるようになりました</b></div>
+		<div class="informationContent">　- 事件終了になったら、残り時間が0になるのを待たずに次村を建てられるようになりました</div>
+		<div class="informationContent"><b>・村建て予定の登録時に、Twitterで告知する機能を追加しました</b></div>
+		<div class="informationContent">　- 村建て告知と同様に、ツイートするかどうかをオプションで選択することができます</div>
+		<div class="informationContent">　- ひとまず、登録者名はツイートに載せないということにしました</div>
+		<div class="informationTopic">以下の不具合を修正しました</div>
+		<div class="informationContent">・特定の設定の組み合わせ時に、村建てが成功しているにも関わらずエラーメッセージが出る</div>
+		<div class="informationContent">・特定の設定の組み合わせ時に、Twitter告知を有効にしていても村建て時にツイートされない</div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-9-11
+		</div>
+		<div class="informationTopic">以下の不具合に関する対策を行いました</div>
+		<div class="informationContent">・観戦者で入村できないことがある</div>
+		<div class="informationContent">・夕方の投票完了後にゲームの進行が止まる場合がある</div>
+		<div class="informationContent">　 - ログから推測できる原因に対して対策を行いました</div>
+		<div class="informationContent">　 - 可能でございましたら、発生した時の状況について掲示板でご報告頂けると助かります</div>
+		<div class="informationContent">　 - 本不具への対策の一つとして、時間非固定・スキップ時の時間変化を、残り1秒 から 残り5秒に変更しました</div>
+		<div class="informationContent"><b>該当村の参加者の方々に深くお詫び申し上げます</b></div>
+		<div class="informationContent">本対策を実施中の不手際により、またもやログデータが消失してしまいました...<b>誠に申し訳ございません</b></div>
+		<div class="informationContent">(トリップ検索は正常に動作しますが、本更新以前のログデータの閲覧ができなくなりました)</div>
+		<div class="informationContent">今後このような事が起こらないよう、入念に対策を行って参ります</div>
+		<div class="informationContent"><b>不具合の件も含め、重ねてお詫び申し上げます</b></div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-9-7
+		</div>
+		<div class="informationTopic">アイコンセットを追加しました</div>
+		<div class="informationContent">・壱番街セット(壱猫 様)</div>
+		<div class="informationContent">・かりんかセット(かえるぴょこぴょこ/あさくら 様)</div>
+		<div class="informationContent">・メトロポリスセット(すむろ水 様)</div>
+		<div class="informationContent">・xxセット(KRNN 様)</div>
+		<div class="informationTopic">以下の変更を行いました</div>
+		<div class="informationContent">・発言時に「太字」「色付」オプションのチェックが自動で外れるようになりました</div>
+		<div class="informationContent">・システムメッセージの日付・時間が一桁の時、先頭に0をつけて二桁表示するようになりました</div>
+		<div class="informationContent">・村の設定を変更した時、何が変更されたかをシステムメッセージで出力するようになりました</div>
+		<div class="informationContent">・村の設定を確認する方法に関するシステムメッセージを追加しました</div>
+		<div class="informationTopic">以下の不具合を修正しました</div>
+		<div class="informationContent">・Twitterの村建て告知で、妖術師の配役設定が表示されない</div>
+		<div class="informationContent">・GMメニューの「霊話」「観戦発言」で引用リストによる引用が使用できない</div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-8-26
+		</div>
+		<div class="informationTopic">効果音を鳴らすことができるようになりました</div>
+		<div class="informationContent">・プレイヤーリスト上部の「♪」オプションでON/OFFを切り替えることができます</div>
+		<div class="informationContent">・バージョンが古い一部のブラウザは、この機能に対応していない可能性があります</div>
+		<div class="informationContent">・ONにすると、以下のタイミングで音が鳴ります</div>
+		<div class="informationContent">　-<b>GMが準備確認ボタンを押した時</b>: ピンポン音が鳴ります</div>
+		<div class="informationContent">　 (プレイヤーは名前の文字色が黒色→赤色になった場合に鳴ります)</div>
+		<div class="informationContent">　-<b>明け方(能力実行可能時間)になった時</b>: 鐘の音が鳴ります</div>
+		<div class="informationContent">　-<b>夕方に、未投票の状態で残り時間が60秒以下の時</b>: 時計のチクタク音が鳴ります</div>
+		<div class="informationTopic">その他、以下の変更を行いました</div>
+		<div class="informationContent">・「更新確認」ボタンの連打防止措置(ボタンを押してから約3秒間はボタンがグレーアウトします)</div>
+		<div class="informationContent">・サーバーのチューニング(少しだけ動作が速くなった...かもしれません)</div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-8-17
+		</div>
+		<div class="informationTopic">システムメッセージに関して以下の変更を行いました</div>
+		<div class="informationContent">・明け方→昼となるタイミングで、システムウィンドウの投票先情報をクリアするようにしました</div>
+		<div class="informationContent">・ゲーム開始直後に、配役の内訳を確認する方法に関するシステムメッセージを追加しました</div>
+		<div class="informationTopic">テキストコマンドを追加しました</div>
+		<div class="informationContent">・[who]：ランダムに選ばれた参加者1人のCNに置き換わります</div>
+		<div class="informationContent">・[werefool]：ランCNで使用される全CNの中から、ランダムに選ばれた1つに置き換わります。わっふるわっふる。</div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-7-29
+		</div>
+		<div class="contents">
+			<div class="paragraph">
+				<div class="informationTopic">ログ抽出に、サブウィンドウ表示を追加しました</div>
+				<div class="informationContent">・プレイヤーリスト上で<b>Shift+クリック</b>で表示されます</div>
+				<div class="informationContent">　・サブウィンドウ表示を使うことで、ログ欄を切り替えずにプレイヤー毎の昼の発言を確認できます</div>
+				<div class="informationContent">　・サブウィンドウ上での発言の引用の仕方は、従来の操作と同じです。</div>
+			</div>
+		</div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-7-27
+		</div>
+		<div class="contents">
+			<div class="paragraph">
+				<div class="informationTopic">以下の不具合を修正しました</div>
+				<div class="informationContent">・過去ログの生成に失敗し、該当村のログデータが消失する場合がある</div>
+				<div class="informationContent">　・ログデータの生成失敗および消失する原因が判明したため、それに対する修正を行いました</div>
+				<div class="informationContent"><b>該当村の参加者様に深くお詫び申し上げます</b></div>
+			</div>
+		</div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-7-25
+		</div>
+		<div class="contents">
+			<div class="paragraph">
+				<div class="informationTopic">引用機能に関して以下の変更を行いました</div>
+				<div class="informationContent">・独り言、遠吠え、(投票結果以外の)天の声、人狼/共有者の夜会話の引用をできなくしました</div>
+				<div class="informationContent">・一回の発言で引用できる数を、最大5個までとしました</div>
+				<div class="informationContent">・引用リストの表示位置を、テキストフォーム下部に変更しました</div>
+				<div class="informationContent">・引用リストの要素をダブルクリックすると、その引用をリストから削除することができるようになりました</div>
+				<div class="informationTopic">引用メモ機能を追加しました</div>
+				<div class="informationContent">・発言を<b>Ctrl+クリック</b>、または<b>引用リスト上でShift+クリック</b>で引用メモに登録されます</div>
+				<div class="informationContent">・メモに登録されている引用は、発言時に挿入されず、また発言時に消去されません</div>
+				<div class="informationContent">・メモに登録できる引用の数に制限はありません</div>
+				<div class="informationTopic">その他、以下の変更を行いました</div>
+				<div class="informationContent">・「事件終了」のデフォルト時間を500秒に変更しました</div>
+				<div class="informationContent">　・時間延長は残り300秒から可能になりました(+200秒/回)</div>
+				<div class="informationContent">・役職情報をクリックで、通常/簡易表示を切り替えられるようにしました</div>
+				<div class="informationContent">・投票結果の 名前、得票数、投票先 の表示を整えました</div>
+			</div>
+		</div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-7-21
+		</div>
+		<div class="contents">
+			<div class="paragraph">
+				<div class="informationTopic">発言の引用機能を改修しました</div>
+				<div class="informationContent">・Shift+クリック又はダブルクリックで引用した発言は、マウスオーバーで内容が表示されるようになります</div>
+				<div class="informationContent">・Alt+ダブルクリックで、従来と同じ平文での引用ができます</div>
+			</div>
+		</div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-7-8
+		</div>
+		<div class="contents">
+			<div class="paragraph">
+				<div class="informationTopic">以下の不具合を修正しました</div>
+				<div class="informationContent">・「事件前」の時間延長に、回数制限が適用されていた</div>
+				<div class="informationContent">・観戦者として入村後に「参加する」ボタンから入村すると、発言ができなくなる</div>
+				<div class="informationContent">・プレイヤーとして入村中に、村建て/観戦者入村が可能であった</div>
+				<div class="informationContent">　・「死亡」状態になると、この制限は解除されます</div>
+				<div class="informationTopic">「霊界表示無し」オプションを追加しました</div>
+				<div class="informationContent">・適用した村では、「事件終了」になるまで霊界でも役職が公開されなくなります</div>
+				<div class="informationTopic">プレイヤーカラーを追加しました</div>
+				<div class="informationContent">・プレイヤーリストと発言の左端に、選択した色が反映されます</div>
+				<div class="informationContent">・ランダムCNの村では、ゲーム開始時にカラーもランダムに変更されます</div>
+				<div class="informationContent">・「ランダム」を選択すると、その村でまだ使われていない色の中からランダムに選択します</div>
+			</div>
+		</div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-7-2
+		</div>
+		<div class="contents">
+			<div class="paragraph">
+				<div class="informationTopic">まとめ表示オプションを追加しました</div>
+				<div class="informationContent">・ONにすると、プレイヤーリストが生存者・襲撃・投票結果のまとめ表示に切り替わります</div>
+				<div class="informationTopic">GM/仮GM入村に関して、以下の変更を行いました</div>
+				<div class="informationContent">・村を建てた人が(GM/仮GMとして)入村するまで、他の人は入村できなくなりました</div>
+				<div class="informationTopic">GMに「CN・アイコン変更」ボタンを追加しました</div>
+				<div class="informationContent">・プレイヤーと同様、「事件前」のみ実行できます</div>
+				<div class="informationTopic">過去ログにログ抽出機能を追加しました</div>
+				<div class="informationContent">・日付毎の抽出、チャットログの逆順表示ができるようになりました</div>
+				<div class="informationContent">・本更新後に生成された過去ログから適用されます</div>
+			</div>
+		</div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-6-27
+		</div>
+		<div class="contents">
+			<div class="paragraph">
+				<div class="informationTopic">「キック/突然死」コマンドの不具合を修正しました</div>
+				<div class="informationContent">・「キック/突然死」コマンドが「事件終了」フェーズでも実行可能であった不具合を修正しました</div>
+				<div class="informationTopic">「時間延長」コマンドに関して、以下の修正をしました</div>
+				<div class="informationContent">・「事件終了」フェーズの時間延長が可能になりました(+120秒/回)</div>
+				<div class="informationContent">・「夕方」「明け方」「事件終了」では、同一フェーズ内で最大3回まで「時間延長」を実行可能です</div>
+				<div class="informationContent">　・「事件前」は実行回数に制限はありません</div>
+				<div class="informationTopic">システムメッセージを追加しました</div>
+				<div class="informationContent">・「時間延長」実行時にシステムメッセージが出るようになりました</div>
+				<div class="informationContent">・「ゲーム開始」ボタンが表示される条件についてのメッセージを追加しました</div>
+			</div>
+		</div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-6-25
+		</div>
+		<div class="contents">
+			<div class="paragraph">
+				<div class="informationTopic">プレイヤーリストの改修を行いました</div>
+				<div class="informationContent">・GM制の村で、GMの情報を表示するようになりました</div>
+				<div class="informationContent">　・GMの発言も抽出できるようになりました</div>
+				<div class="informationTopic">GMに「準備確認」ボタンを追加しました</div>
+				<div class="informationContent">・「事件前」にGM/仮GMが使用可能です</div>
+				<div class="informationContent">・使用した場合、プレイヤー全員が「準備完了」ボタンを押すと「ゲーム開始」ボタンを押すことができるようになります</div>
+				<div class="informationTopic">プレイヤーに「出て行く」ボタンを追加しました</div>
+				<div class="informationTopic">観戦者に「参加する」ボタンを追加しました</div>
+				<div class="informationContent">・「事件前」に使用可能です</div>
+				<div class="informationTopic">発言コピーの方法を変更しました</div>
+				<div class="informationContent">・Shift + クリックで、ログ抽出状態の場合は解除しつつコピーします。また、テキストフォームをフォーカスします</div>
+				<div class="informationContent">・ダブルクリックで、ログ抽出状態の場合でも解除しないでコピーします。また、テキストフォームをフォーカスしません</div>
+				<div class="informationTopic">ログ抽出機能を強化しました</div>
+				<div class="informationContent">・日付毎のログ抽出と、プレイヤー毎のログ抽出を併用できるようになりました</div>
+				<div class="informationContent">　・「特定の日付の、特定のプレイヤーの発言」を抽出できるようになりました</div>
+				<div class="informationTopic">操作性に関して、一部変更を行いました</div>
+				<div class="informationContent">・ログ抽出状態中に発言をすると、ログ抽出状態が解除されるようになりました</div>
+				<div class="informationContent">・投票・役職能力実行でも、同様にログ抽出状態が解除されるようになりました</div>
+				<div class="informationTopic">役職決定のロジックを見直しました</div>
+				<div class="informationContent">・初日犠牲者が異常な高確率で村人以外の役職を引き当てる設定になっていたのを修正しました</div>
+				<br><div class="informationContent">アップデート時の不手際により、1〜5番地の過去ログデータが消失してしまいました...誠に申し訳ございません。</div>
+			</div>
+		</div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-6-17
+		</div>
+		<div class="contents">
+			<div class="paragraph">
+				<div class="informationTopic">新役職「妖術師」を追加しました</div>
+				<div class="informationContent">・オプションで狂人の代わりに登場する、人狼陣営の役職です。</div>
+				<div class="informationContent">・能力については<a href="../howto/howto_rule_roles.html#wizard" target="_blank">こちら</a>をご覧下さい。</div>
+			</div>
+		</div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-6-11
+		</div>
+		<div class="contents">
+			<div class="paragraph">
+				<div class="informationTopic">「一発発言機能」を改修しました</div>
+				<div class="informationContent">・Shift + Enterで、発言せずに改行することができるようになりました。</div>
+				<div class="informationContent">・カーソルが文章の途中にある状態でEnterを押下(発言)した際、その位置で文章が改行される現象を修正しました。</div>
+				<div class="informationTopic">観戦者の発言に背景色をつけました</div>
+				<div class="informationContent">・プレイヤーの発言と見分けがつくように変更しました。</div>
+				<div class="informationContent">・過去ログに関しては、本更新後に生成されるものから適用されます。</div>
+				<div class="informationTopic">以下の現象を修正しました</div>
+				<div class="informationContent">・「事件前」において、時間延長が可能な状態(残り時間300秒以下)で「時間延長」ボタンを押しても時間が延長されない。</div>
+			</div>
+		</div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-6-10
+		</div>
+		<div class="contents">
+			<div class="paragraph">
+				<div class="informationTopic">村の開催予定を登録できるようになりました</div>
+				<div class="informationContent">・トップ画面の下部にて登録・確認ができます</div>
+				<div class="informationTopic">システムメッセージを一部変更しました</div>
+				<div class="informationContent">・村民募集中、ゲーム進行中の村が無い場合は、その旨を表すメッセージが表示されるようになりました</div>
+				<div class="informationContent">・役職時間非固定村(または「少女」ありの村)で、まだ襲撃可能な時間ではない場合のメッセージを分かりやすくしました</div>
+				<div class="informationTopic">過去ログ生成に関して、以下の現象を修正しました</div>
+				<div class="informationContent">・過去ログに狼の「遠吠え」(人狼以外の生存者のみに見えるダミーメッセージ)が含まれている</div>
+				<div class="informationContent"> -本更新後に生成される過去ログから適用されます</div>
+			</div>
+		</div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-5-27
+		</div>
+		<div class="contents">
+			<div class="paragraph">
+				<div class="informationTopic">過去ログのレイアウトを変更しました</div>
+				<div class="informationContent">・配役内訳と、村のオプションが表示されるようになりました</div>
+				<div class="informationContent">・本更新後に生成された過去ログから適用されます</div>
+				<div class="informationTopic">システムメッセージの内容を変更しました</div>
+				<div class="informationContent">・時刻に加えて、日付も出るようになりました</div>
+				<div class="informationContent">・投票結果の最終行に日付時刻が単独で表示されるように変更しました</div>
+				<div class="informationContent">・ヘルプウィンドウに「沈黙ボタン」の説明を追加しました</div>
+			</div>
+		</div>
+		<div class="dline"> </div>
+		<div class="subtopic">
+			2014-5-6
+		</div>
+		<div class="contents">
+			<div class="paragraph">
+				<div class="informationTopic">システムのリファインを行いました</div>
+				<div class="informationContent">・<b>UIの改修</b>: 操作が分かりやすくなるような変更を加えました</div>
+				<div class="informationContent">・<b>チャットログの表示数制限を撤廃</b></div>
+				<div class="informationContent">・<b>役職「少女」の追加</b>: 「ミラーズホロウの人狼」に出てくる役職をアレンジしたものです</div>
+				<div class="informationContent">・<b>twitterアカウント開設</b>: 村建て通知やお知らせの他、定期的に機能やルールをランダムに紹介します</div>
+				<div class="informationContent">・<b>説明書の更新</b></div>
+				<div class="informationContent">システムの根本的な改修に伴い、誠に申し訳ございませんが以前の過去ログデータを削除しました</div>
+				<div class="informationContent">本更新以降の過去ログは、HTML形式で出力されるようになります</div>
+			</div>
+		</div>
+		<div class="dline"> </div>
+		<div class="subtopic">2013-7-1</div>
+		<div class="contents">
+		<b>以下の不具合を修正しました。</b><br>
+		<span style="font-size: small">
+    	・再入村したプレイヤーの画面上で、プレイヤーリストが更新されなくなる<br>
+    	・ゲーム開始前に再入村したプレイヤーの画面上で、役職決定後も自身の役職が「役職未定」と表示されてしまう<br>
+    	該当する村の方々にはご迷惑をおかけしました。<br>また、不具合報告にご協力頂き、ありがとうございました。</span>
+    	</div>
+    	<div class="dline"> </div>
+		<div class="subtopic">2013-5-18</div>
+		<div class="contents">
+		<b>アイコンに「花のお江戸」セットを追加しました</b><br>
+		</div>
+		<div class="dline"> </div>
+		<div class="subtopic">2013-5-9</div>
+		<div class="contents">
+		<b>「一発発言」オプションを追加しました</b><br>
+    	<span style="font-size: small">・有効化すると、発言の改行ができなくなる代わりにEnterキー押下で発言することができるようになります。</span><br>
+		</div>
+		<div class="dline"> </div>
+		<div class="subtopic">2013-5-7</div>
+		<div class="contents">
+	    <b>表示されているログの数が多くなると重くなる現象への対策をしました。</b><br>
+    	<span style="font-size: small">・一度に表示できるログの数を50個に制限しました<br>　(オプションで増加可能)<br>
+    	・表示可能数を超えると、ページ送りのボタンが出現します。<br>
+    	・表示数はオプションで増やす事が可能です(重くなる可能性があります)<br>
+    	　増加数はブラウザの種類で異なり、<br>
+    	　<b>IE: +15個(合計65個)</b><br>
+    	　<b>Chrome, Firefox, Opera, Safari: +30個(合計80個)</b><br>
+    	　となっています。<b>IEが憎くてこのような仕様にしている訳ではなく</b>、IEが他のブラウザと比べて重くなるのが早い為です。
+    	 重くなった場合は、掲示板の不具合報告にて情報を提供してくださると助かります。<br></span>
+    	<b>観戦者、霊界のログの色を変更しました。</b><br>
+    	<b>投票時間の突死対策オプションを追加しました。</b><br>
+    	<span style="font-size: small">・有効化した人は、未投票のまま残り時間が30秒を切るとお知らせが表示されます。</span>
+		</div>
+		<div class="dline"> </div>
+		<div class="subtopic">2013-5-4</div>
+		<div class="contents">
+			ゲーム内に操作説明のメッセージを追加。<br>
+    	    1日目 夜〜2日目 夕方の間に、その都度表示されます。
+		</div>
+		<div class="dline"> </div>
+		<div class="subtopic">2013-5-1</div>
+		<div class="contents">B配役でゲームスタートするとプログラムが停止するバグを修正<br>ほぼ同時に入村した人がいた場合に、ゲームスタートするとプログラムが停止するバグを修正<br>
+			該当する村の方々に深くお詫び申し上げます。
+		</div>
+		<div class="dline" > </div>
+		<div class="subtopic">2013-4-30</div>
+		<div class="contents">掲示板設置<br>Q＆Aページ開設<br>簡易アクセスカウンター設置</div>
+		<div class="dline"> </div>
+		<div class="subtopic">2013-4-28</div>
+		<div class="contents">沈黙機能(昼・夜のスキップ機能)を実装<br>役職実行時間の固定を解除するオプションを追加</div>
+		<div class="dline"> </div>
+		<div class="subtopic">2013-4-26</div>
+		<div class="contents">テスト運用開始</div>
+      </div>
+	</body>
+</html>

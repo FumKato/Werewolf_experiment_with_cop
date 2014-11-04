@@ -1,0 +1,31 @@
+div#myCharacterName {
+	width: 467px;
+	height: 20px;
+	font-size: 15px;
+	float: left;
+}
+
+.characterNameBody {
+	font-weight: bold;
+}
+
+div#myColleague {
+	width: 467px;
+	height: 20px;
+	font-size: 15px;
+	float: left;
+}
+
+div#voteInformation {
+	width: 467px;
+	height: 20px;
+	font-size: 15px;
+	float: left;
+}
+
+div#actionInformation {
+	width: 467px;
+	height: 20px;
+	font-size: 15px;
+	float: left;
+}

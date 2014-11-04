@@ -1,0 +1,30 @@
+div#timerTopper {
+	float: left;
+	width: 100px;
+	height: 20px;
+}
+
+div#remainingTime {
+	width: 80px;
+	height: 60px;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+	float: left;
+}
+
+div.blank {
+	width: 16px;
+	height: 28px;
+	float: left;
+}
+
+div#seconds {
+	width: 16px;
+	height: 28px;
+	float: left;
+}
+
+.limited {
+	color: #FF0000;
+}

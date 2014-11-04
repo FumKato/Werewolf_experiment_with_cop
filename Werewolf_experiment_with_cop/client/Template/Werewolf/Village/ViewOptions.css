@@ -1,0 +1,25 @@
+.viewOptionItem{
+	height: 25px;
+	float: left;
+	margin-right: 20px;
+}
+
+.viewOptionLabel{
+	float: left;
+}
+
+.viewOptionSwitch{
+	height: 20px;
+	width: 35px;
+	text-align: center;
+	margin-left: 2px;
+	float: left;
+	border: solid 1px gray;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.viewOptionSwitchClicked{
+	color: #FFF;
+	background-color: #000033;
+}
