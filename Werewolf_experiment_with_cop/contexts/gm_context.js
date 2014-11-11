@@ -1,5 +1,12 @@
 if(Meteor.isClient){
 	var operations = {
+		roles_controller_update_roles_view: function(){
+			this.proceeds.updateRolesView();
+			var villageView = new VillageView();
+			villageView.flush('systemWindow');
+			villageView.render('GMMenu');
+		},
+		
 		role_information_view_render: function(role){
 			this.proceeds.render(role);
 			$('#roleName').addClass('wolfOrGM');

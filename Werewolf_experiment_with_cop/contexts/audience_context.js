@@ -1,5 +1,5 @@
 if(Meteor.isClient){
-	var operations = {
+	var operations = {		
 		role_information_view_render: function(role){
 			this.proceeds.render(role);
 			$('#roleDetailMessage').html('いらっしゃいませ。プレイヤーと一緒に推理をお楽しみください。');

@@ -69,7 +69,7 @@ Tracker.autorun(function(){
 
 Tracker.autorun(function(){
 	if(Session.get('myPlayerID') != null) {
-		Meteor.subscribe('roles', Session.get('villageID'), Session.get('myPlayerID'), Session.get('currentPhase'), Session.get('currentState'), Session.get('myRole'), new RolesController().updateRolesView());
+		Meteor.subscribe('roles', Session.get('villageID'), Session.get('myPlayerID'), Session.get('currentPhase'), Session.get('currentState'), Session.get('myRole'), rolesController.updateRolesView());
 	}
 });
 

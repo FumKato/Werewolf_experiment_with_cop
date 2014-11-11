@@ -193,6 +193,36 @@ setup = function(day, phase){
 			isReady: true,
 			isGM: false
 		});
+	var mason1ID = Players.insert({
+			villageID: villageID,
+			characterName: 'mason1',
+			tripKey: 'トリなし',
+			isPlayer: true,
+			state: '生　存',
+			handleName: 'mason1',
+			password: 'mason1',
+			icon: '10',
+			color: 'coral',
+			num: 10,
+			logCount: 0,
+			isReady: true,
+			isGM: false
+		});
+	var mason2ID = Players.insert({
+			villageID: villageID,
+			characterName: 'mason2',
+			tripKey: 'トリなし',
+			isPlayer: true,
+			state: '生　存',
+			handleName: 'mason2',
+			password: 'mason2',
+			icon: '11',
+			color: 'coral',
+			num: 11,
+			logCount: 0,
+			isReady: true,
+			isGM: false
+		});
 	var victimID = Players.insert({
 			villageID: villageID,
 			characterName: '初日犠牲者',
@@ -201,9 +231,9 @@ setup = function(day, phase){
 			state: '生　存',
 			handleName: 'victim',
 			password: 'victim',
-			icon: '10',
+			icon: '12',
 			color: 'indigo',
-			num: 10,
+			num: 12,
 			logCount: 0,
 			isReady: true,
 			isGM: false
@@ -220,8 +250,8 @@ setup = function(day, phase){
 			handleName: 'GM',
 			password: 'GM',
 			tripKey: 'トリなし',
-			icon: '11',
-			num: 11,
+			icon: '13',
+			num: 13,
 			color: 'black',
 			logCount: 0,
 			isReady: true,
@@ -284,6 +314,16 @@ setup = function(day, phase){
 	});
 	Roles.insert({
 		villageID: villageID,
+		playerID: mason1ID,
+		roleName: '共有者'
+	});
+	Roles.insert({
+		villageID: villageID,
+		playerID: mason2ID,
+		roleName: '共有者'
+	});
+	Roles.insert({
+		villageID: villageID,
 		playerID: audienceID,
 		roleName: '観戦者'
 	});
@@ -305,6 +345,8 @@ setup = function(day, phase){
 		hunterID: hunterID,
 		girlID: girlID,
 		wizardID: wizardID,
+		mason1ID: mason1ID,
+		mason2ID: mason2ID,
 		victimID: victimID,
 		audienceID: audienceID,
 		GMID: GMID
