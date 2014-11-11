@@ -32,7 +32,38 @@ if(Meteor.isClient){
 
 if(Meteor.isServer){
 	var operations = {
-	
+		chat_logs_controller_publish_chat_logs: function(villageID, playerID, phase, state){
+			if(phase != '事件前' && phase != '事件終了'){
+				return chatLogsModel.getChatLogs(villageID, playerID, ['wolf', 'audience', 'ghost', 'monologue']);
+			} else {
+				return this.proceeds.publishChatLogs(villageID, playerID, phase, state);
+			}
+		},
+		
+		roles_controller_publish_roles: function(villageID, playerID, role, phase, state, role) {
+			var player = playersModel.getPlayersByID(playerID);
+			if(player == null) return;
+			if(phase.phase == '事件終了' || (player.isPlayer && player.state == '死　亡')){
+				return this.proceeds.publishRoles(villageID, playerID, role, phase, state, role);
+			} else {
+				return rolesModel.getRolesByRoleName(villageID, '共有者');
+			}
+		},
+		
+		chat_logs_model_create_chat_logs: function(villageID, playerID, role, phase, player, plainSentence, options, color, quotes){
+			if(phase.phase == '夜' && player.state == '生　存'){
+				var name = player.characterName;
+				var sentence = checkText(villageID, plainSentence, 500);
+				name = '<span class="mason">' + name + '</span>';
+				sentence = '<span class="mason">' + sentence + '</span>';
+				sentence = addOptions(sentence, options);
+				addQuotes(quotes, sentence);
+				insertChatLogs(villageID, playerID, phase, name, sentence, 'mason', 'none', false);
+				return 'mason';
+			} else {
+				return this.proceeds.createChatLogs(villageID, playerID, role, phase, player, plainSentence, options, color, quotes);
+			}
+		}
 	};
 
 	mason_context = new Context('mason', operations);

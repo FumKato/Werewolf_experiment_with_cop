@@ -51,10 +51,11 @@ ActionsController = function(){
 		}
 	};
 };
+actionsController = new ActionsController();
 
 Meteor.methods({
 	createActions: function(villageID, from, to, type){
-		new ActionsController().createActions(villageID, from, to, type);
+		actionsController.createActions(villageID, from, to, type);
 	},
 	
 	skipCheck: function(villageID){

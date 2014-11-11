@@ -5,7 +5,8 @@ if(Meteor.isClient){
 			$('#roleName').addClass('cat');
 			$('#roleDetailMessage').html('あなたは村人の仲間です。処刑されるとランダムに1人を、人狼に殺害されると人狼1人を道連れにします。');
 			$("#roleIcon").html('<img src="/roleIcon/Cat.png">');
-		}
+		},
+
 	};
 
 	cat_context = new Context('cat', operations);
