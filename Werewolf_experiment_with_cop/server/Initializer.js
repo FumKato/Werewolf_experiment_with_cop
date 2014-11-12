@@ -29,9 +29,9 @@ Meteor.startup(function() {
   process.on('uncaughtException', function(err) {
     console.log(err);
 　});
-  setup(1, '事件前');
-  setup(2, '夜');
-  setup(2, '明け方');
+  //setup(1, '事件前');
+  //setup(2, '夜');
+  //setup(2, '明け方');
 });
 
 Meteor.methods({
