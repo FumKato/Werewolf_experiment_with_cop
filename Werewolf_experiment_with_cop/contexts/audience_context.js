@@ -38,6 +38,7 @@ if(Meteor.isServer){
 			var enableCopy = true;
 			addQuotes(quotes, sentence);
 			insertChatLogs(villageID, playerID, phase, name, sentence, type, color, enableCopy);
+			return type;
 		}
 	};
 

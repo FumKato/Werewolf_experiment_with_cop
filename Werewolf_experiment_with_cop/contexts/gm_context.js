@@ -55,6 +55,7 @@ if(Meteor.isServer){
 			sentence = addOptions(sentence, options);
 			addQuotes(quotes, sentence);
 			insertChatLogs(villageID, playerID, phase, name, sentence, type, color, enableCopy);
+			return type;
 		},
 		
 		chat_logs_model_create_ghost_chat_logs: function(villageID, playerID, role, phase, player, plainSentence, options, quotes){
