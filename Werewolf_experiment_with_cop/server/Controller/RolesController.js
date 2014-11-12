@@ -4,7 +4,7 @@ RolesController = function(){
 		return null;
 	};
 	
-	_this.prototype.publishRoles = function(villageID, playerID, role, phase, state, role) {
+	_this.prototype.publishRoles = function(villageID, playerID, phase, state, role) {
 		if(playerID == null || villageID == null) return;
 		var phase = phasesModel.getPhasesByVillageID(villageID);
 		var player = playersModel.getPlayersByID(playerID);
@@ -26,9 +26,9 @@ Meteor.methods({
 	}
 });
 
-Meteor.publish('roles', function(villageID, playerID, role, phase, state, role) {
+Meteor.publish('roles', function(villageID, playerID, phase, state, role) {
 	adapt_context(playerID);
-	var result = rolesController.publishRoles(villageID, playerID, role, phase, state, role);
+	var result = rolesController.publishRoles(villageID, playerID, phase, state, role);
 	deactivate_context(playerID);
 	return result;
 });
