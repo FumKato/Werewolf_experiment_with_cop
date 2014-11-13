@@ -253,6 +253,21 @@ setup = function(day, phase){
 			isReady: true,
 			isGM: false
 		});
+	var fanaticID = Players.insert({
+			villageID: villageID,
+			characterName: 'fanatic',
+			tripKey: 'トリなし',
+			isPlayer: true,
+			state: '生　存',
+			handleName: 'fanatic',
+			password: 'fanatic',
+			icon: '16',
+			color: 'indigo',
+			num: 16,
+			logCount: 0,
+			isReady: true,
+			isGM: false
+		});
 	var audienceID = Players.insert({
 			villageID: villageID,
 			characterName: '観戦者1',
@@ -344,6 +359,11 @@ setup = function(day, phase){
 	});
 	Roles.insert({
 		villageID: villageID,
+		playerID: fanaticID,
+		roleName: '狂　人'
+	});
+	Roles.insert({
+		villageID: villageID,
 		playerID: audienceID,
 		roleName: '観戦者'
 	});
@@ -368,6 +388,7 @@ setup = function(day, phase){
 		mason1ID: mason1ID,
 		mason2ID: mason2ID,
 		mediumID: mediumID,
+		fanaticID: fanaticID,
 		victimID: victimID,
 		audienceID: audienceID,
 		GMID: GMID
