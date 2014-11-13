@@ -30,6 +30,7 @@ Meteor.startup(function() {
     console.log(err);
 　});
   //setup(1, '事件前');
+  //setup(2, '夕方');
   //setup(2, '夜');
   //setup(2, '明け方');
 });

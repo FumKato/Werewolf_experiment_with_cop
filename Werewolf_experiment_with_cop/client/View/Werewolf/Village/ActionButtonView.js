@@ -1,4 +1,8 @@
 showButton = function(target){
+	var $buttons = $('.actionButtons');
+	$buttons.attr('disabled', 'disabled');
+	$buttons.hide();
+	
 	var targetName = '#' + target;
 	var $target = $(targetName);
 	$target.show();
@@ -23,7 +27,7 @@ ActionButtonView = function(){
 				}
 				break;
 			case '夕方':
-				if(Session.get('currentState') == '生　存'){
+				if(player.state == '生　存'){
 					new SystemWindowView().flush('actionInformation');
 					showButton('vote');
 				}

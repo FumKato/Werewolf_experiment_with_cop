@@ -13,6 +13,8 @@ if(Meteor.isClient){
 				villageView.flush('extraMenu');
 			} else if(phase.pahse == '明け方'){
 				soundManager.playBellSound();
+			} else if(phase.phase == '事件終了'){
+				$('#villageBackButton').show();
 			}
 		}
 	};

@@ -15,8 +15,9 @@ if(Meteor.isClient){
 		},
 		
 		action_button_view_render: function(phase, roleName, player){
+			console.log('done');
 			var gmMenuView = new GMMenuView();
-			switch(phase){
+			switch(phase.phase){
 			case '事件前':
 				villageView.flush('logSelector');
 				showButton('changeSettings');
