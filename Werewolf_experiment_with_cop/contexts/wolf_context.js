@@ -7,12 +7,7 @@ if(Meteor.isClient){
 				var systemWindowView = new SystemWindowView();
 				var message = 'あなたの仲間は <span class="wolfOrGM">';
 				var playersModel = new PlayersModel();
-				for(var i=0; i<roles.length; i++){
-					if(roles[i].playerID == Session.get('myPlayerID')) continue;
-					var player = playersModel.getPlayersByID(roles[i].playerID);
-					message = message + player.characterName + ',';
-				}
-				message = message.slice(0, -1);
+				message += getColleagueName(roles);
 				message += '</span>です';
 				systemWindowView.renderColleague(message);
 			}

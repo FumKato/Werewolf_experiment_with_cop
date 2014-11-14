@@ -1,3 +1,15 @@
+getColleagueName = function(roles){
+	var playersModel = new PlayersModel();
+	var message = '';
+	for(var i=0; i<roles.length; i++){
+		if(roles[i].playerID == Session.get('myPlayerID')) continue;
+		var player = playersModel.getPlayersByID(roles[i].playerID);
+		message = message + player.characterName + ' ';
+	}
+	message = message.slice(0, -1);
+	return message;
+};
+
 RolesController = function() {
 		var _this = RolesController;
 		
