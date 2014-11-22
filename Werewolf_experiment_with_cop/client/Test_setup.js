@@ -287,6 +287,20 @@ setup = function(day, phase){
 			isReady: true,
 			isGM: true
 		});
+	var tmpGMID = Players.insert({
+			villageID: villageID,
+			characterName: 'tmpGM',
+			isPlayer: true,
+			handleName: 'tmpGM',
+			password: 'tmpGM',
+			tripKey: 'トリなし',
+			icon: '15',
+			num: 15,
+			color: 'black',
+			logCount: 0,
+			isReady: true,
+			isGM: true
+		});
 	Roles.insert({
 		villageID: villageID,
 		playerID: villagerID,
@@ -372,6 +386,11 @@ setup = function(day, phase){
 		playerID: GMID,
 		roleName: 'GM'
 	});
+	Roles.insert({
+		villageID: villageID,
+		playerID: tmpGMID,
+		roleName: '仮GM'
+	});
 	var ids = {
 		villageID: villageID,
 		phaseID: phaseID,
@@ -391,7 +410,8 @@ setup = function(day, phase){
 		fanaticID: fanaticID,
 		victimID: victimID,
 		audienceID: audienceID,
-		GMID: GMID
+		GMID: GMID,
+		tmpGMID: tmpGMID
 	};
 	return ids;
 };

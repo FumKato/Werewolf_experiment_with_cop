@@ -42,6 +42,42 @@ suite('Server: ChatLogsController', function() {
 		});
 	});
 	
+	test('publishChatLogs: tmpGM recieves appropriate chat logs', function(done, server) {
+		server.eval(function() {
+			var IDs = setup(1, '事件前');
+			var phase = Phases.findOne({_id: IDs.phaseID});
+			var chatLogs = ChatLogs.find({}).fetch();
+			emit('check', chatLogs.length, 0);
+			ChatLogs.insert({villageID: IDs.villageID, playerID: IDs.wolf1ID, type: 'wolf'});
+			ChatLogs.insert({villageID: IDs.villageID, playerID: IDs.villagerID, type: 'monologue'});
+			ChatLogs.insert({villageID: IDs.villageID, playerID: IDs.GMID, type: 'normal'});
+			ChatLogs.insert({villageID: IDs.villageID, playerID: IDs.victimID, type: 'ghost'});
+			ChatLogs.insert({villageID: IDs.villageID, playerID: IDs.audienceID, type: 'audience'});
+			ChatLogs.insert({villageID: IDs.villageID, playerID: IDs.mason1ID, type: 'mason'});
+			ChatLogs.insert({villageID: IDs.villageID, playerID: 'dummyID', type: 'dummy'});
+			
+			adapt_context(IDs.tmpGMID);
+			var results = chatLogsController.publishChatLogs(IDs.villageID, IDs.tmpGMID, phase, '生　存').fetch();
+			emit('check', results.length, 6);
+			for(var i=0; i<results.length; i++){
+				emit('neCheck', results[i].type, 'dummy');
+			}			
+			emit('done');
+		});
+		
+		server.on('check', function(target, expect){
+			assert.equal(target, expect);
+		});
+		
+		server.on('neCheck', function(target, unexpect){
+			assert.notEqual(target, unexpect);
+		});
+		
+		server.once('done', function(){
+			done();
+		});
+	});
+	
 	test('publishChatLogs: Audience recieves appropriate chat logs', function(done, server) {
 		server.eval(function() {
 			var IDs = setup(2, '明け方');

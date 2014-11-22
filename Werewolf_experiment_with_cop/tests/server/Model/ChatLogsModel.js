@@ -217,6 +217,33 @@ suite('Server: ChatLogsModel', function() {
 		});
 	});
 	
+	test('createGhostChatLogs: success to create with tmpGM role', function(done, server) {
+		server.eval(function() {
+			var IDs = setup(1, '事件前');
+			var playerID = IDs.tmpGMID;
+			var phase = Phases.findOne({_id: IDs.phaseID});
+			var options = {bold: false, color: false};
+			var quotes = [];
+			var role = Roles.findOne({playerID: playerID});
+			var player = Players.findOne({_id: playerID});
+			var result = ChatLogs.find({}).count();
+			emit('check', result, 0);
+			adapt_context(playerID);
+			chatLogsModel.createGhostChatLogs(IDs.villageID, playerID, role, phase, player, 'test', options, quotes);
+			result = ChatLogs.find({type: 'ghost'}).count();
+			emit('check', result, 1);
+			emit('done');
+		});
+		
+		server.on('check', function(target, expect){
+			assert.equal(target, expect);
+		});
+		
+		server.once('done', function(){
+			done();
+		});
+	});
+	
 	test('createGhostChatLogs: fail to create because of role', function(done, server) {
 		server.eval(function() {
 			var IDs = setup(2, '昼');

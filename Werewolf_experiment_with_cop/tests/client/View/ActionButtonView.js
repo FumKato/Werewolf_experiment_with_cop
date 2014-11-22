@@ -90,6 +90,53 @@ suite('Client: ActionButtonView', function() {
 		});
 	});
 	
+	test('render: render GM buttons on 事件前 phase with tmpGM role', function(done, server, client) {
+		client.eval(function() {
+			var IDs = setup(1, '事件前');
+			var werewolfView = new WerewolfView();
+			Session.set('myPlayerID', IDs.tmpGMID);
+			Session.set('villageID', IDs.villageID);
+			role = new RolesModel().getRolesByPlayerID(Session.get('myPlayerID'));
+			Session.set('myRole', role);
+			
+		  	werewolfView.flush('lobby');
+		  	werewolfView.render('village');
+		  	new ActionButtonView().flush();
+		  	new VillageView().enableInputs();
+		  	
+			adapt_context();
+			var targetName = '#changeSettings';
+			var result = targetName + ': ' + $(targetName).is(':visible');
+			var expect = targetName + ': ' + 'true';
+			emit('check', result, expect);
+			
+			targetName = '#extraMenu';
+			result = targetName + ': ' + $(targetName).is(':visible');
+			expect = targetName + ': ' + 'true';
+			emit('check', result, expect);
+			
+			targetName = '#readyCheck';
+			result = targetName + ': ' + $(targetName).is(':visible');
+			expect = targetName + ': ' + 'true';
+			emit('check', result, expect);
+			
+			targetName = '#cnChange';
+			result = targetName + ': ' + $(targetName).is(':visible');
+			expect = targetName + ': ' + 'true';
+			emit('check', result, expect);
+			
+			emit('done');
+		});
+		
+		client.on('check', function(target, expect){
+			assert.equal(target, expect);
+		});
+		
+		client.once('done', function(){
+			done();
+		});
+	});
+	
 	test('render: render buttons on 事件前 phase with other roles', function(done, server, client) {
 		client.eval(function() {
 			var IDs = setup(1, '事件前');

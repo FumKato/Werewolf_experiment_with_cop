@@ -179,6 +179,57 @@ suite('Client: RoleInformationView', function() {
 		});
 	});
 	
+	test('render: render tmpGM Icon and message', function(done, server, client) {
+		client.eval(function() {
+			var IDs = setup(1, '事件前');
+			var werewolfView = new WerewolfView();
+			Session.set('myPlayerID', IDs.tmpGMID);
+			Session.set('villageID', IDs.villageID);
+			role = new RolesModel().getRolesByPlayerID(Session.get('myPlayerID'));
+			Session.set('myRole', role);
+			
+		  	werewolfView.flush('lobby');
+		  	werewolfView.render('village');
+		  	new ActionButtonView().flush();
+		  	new VillageView().enableInputs();
+		  	
+			adapt_context();
+			
+			var roleName = role.roleName;
+			var className = 'wolfOrGM';
+			var message = '村建てありがとうございます。設定変更・キック, 各種発言が可能です。誤爆にお気をつけて。';
+			var icon = '<img src="/roleIcon/Master.png">';
+			
+			var result = $('#roleName').html();
+			var expect = role.roleName;
+			emit('check', result, expect);
+			
+			if(className != ''){
+				result = $('#roleName').hasClass(className);
+				expect = true;
+				emit('check', result, expect);
+			}
+			
+			result = $('#roleDetailMessage').html();
+			expect = message;
+			emit('check', result, expect);
+			
+			result = $("#roleIcon").html();
+			expect = icon;
+			emit('check', result, expect);
+			
+			emit('done');
+		});
+		
+		client.on('check', function(target, expect){
+			assert.equal(target, expect);
+		});
+		
+		client.once('done', function(){
+			done();
+		});
+	});
+	
 	test('render: render villager Icon and message', function(done, server, client) {
 		client.eval(function() {
 			var IDs = setup(2, '昼');
