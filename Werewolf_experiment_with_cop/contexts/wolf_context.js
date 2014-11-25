@@ -36,7 +36,7 @@ if(Meteor.isClient){
 if(Meteor.isServer){
 	var operations = {
 		chat_logs_controller_publish_chat_logs: function(villageID, playerID, phase, state){
-			if(phase != '事件前' && phase != '事件終了'){
+			if(phase != '事件前' && phase != '事件終了' && state == '生　存'){
 				return chatLogsModel.getChatLogs(villageID, playerID, ['dummy', 'audience', 'mason', 'ghost', 'monologue']);
 			} else {
 				return this.proceeds.publishChatLogs(villageID, playerID, phase, state);
