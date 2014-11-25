@@ -268,10 +268,26 @@ setup = function(day, phase){
 			isReady: true,
 			isGM: false
 		});
+	var hearerID = Players.insert({
+			villageID: villageID,
+			characterName: 'hearer',
+			tripKey: 'トリなし',
+			isPlayer: true,
+			state: '生　存',
+			handleName: 'hearer',
+			password: 'hearer',
+			icon: '17',
+			color: 'indigo',
+			num: 17,
+			logCount: 0,
+			isReady: true,
+			isGM: false
+		});
 	var audienceID = Players.insert({
 			villageID: villageID,
 			characterName: '観戦者1',
-			isPlayer: false
+			isPlayer: false,
+			state: '生　存'
 		});
 	var GMID = Players.insert({
 			villageID: villageID,
@@ -378,6 +394,11 @@ setup = function(day, phase){
 	});
 	Roles.insert({
 		villageID: villageID,
+		playerID: hearerID,
+		roleName: '聴狂人'
+	});
+	Roles.insert({
+		villageID: villageID,
 		playerID: audienceID,
 		roleName: '観戦者'
 	});
@@ -408,6 +429,7 @@ setup = function(day, phase){
 		mason2ID: mason2ID,
 		mediumID: mediumID,
 		fanaticID: fanaticID,
+		hearerID: hearerID,
 		victimID: victimID,
 		audienceID: audienceID,
 		GMID: GMID,

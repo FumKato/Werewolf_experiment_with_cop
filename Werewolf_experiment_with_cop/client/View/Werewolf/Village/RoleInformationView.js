@@ -6,9 +6,7 @@ RoleInformationView = function(){
 			$('#roleDetailMessage').html('');
 			$roleName.removeClass();
 			$roleName.html(role.roleName);
-			if(role.roleName == '役職未定'){
-				  $("#roleIcon").html('<img src="/roleIcon/Unknown.png">');
-			}
+			$("#roleIcon").html('<img src="/roleIcon/Unknown.png">');
 	};
 };
 

@@ -16,6 +16,9 @@ RolesModel = function(){
 		},
 		
 		getRolesByRoleName: function(villageID, roleName){
+			if(roleName == '聴狂人'){
+				return Roles.find({villageID: villageID, roleName: {$in: [roleName, '人　狼']}});
+			}
 			return Roles.find({villageID: villageID, roleName: roleName});
 		},
 		
